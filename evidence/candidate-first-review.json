@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "candidate": "first-review-2026-09-16",
+  "digest": "3e59523220dbf39c792e6e41599b637b5776880515708ca6921523fa6b96c711",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "3cbb8a0f248b03c98c1bcbb968eae76900aa3253522b01044540488cb022e030",
+      "bytes": 928
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "89646ac3b99e29aa7eb30aa17ddd63c162f8f22490884c4d69516879551d02eb",
+      "bytes": 961
+    },
+    {
+      "path": "design/reliable-processing.md",
+      "sha256": "5802bb78c6198c846f43daa1f07c068b70e960b01ef139cb3291f788dd0f8e70",
+      "bytes": 1903
+    },
+    {
+      "path": "evidence/coverage.md",
+      "sha256": "d137dee5647aceda70ef8e55fdda0a27797503a0fa7d3518b0069d4b5af5b766",
+      "bytes": 2342
+    },
+    {
+      "path": "evidence/source-manifest.json",
+      "sha256": "5268c5756d62d51c91ff63eee339ffa34b1a5ce91d54297136770dc409da85bb",
+      "bytes": 6356
+    },
+    {
+      "path": "evidence/versions.md",
+      "sha256": "e7d32797be879975fbb211f7dc887c90d9032e8ac93f389b77362fbe47d9a8cd",
+      "bytes": 1430
+    },
+    {
+      "path": "implementation/architecture.md",
+      "sha256": "441975760afcc12ac253628e318c805d61fa1f66a02a6ee9932e21e9762bc382",
+      "bytes": 2241
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5",
+      "bytes": 11560
+    },
+    {
+      "path": "README.md",
+      "sha256": "810e67bc74e3f7069c343c6232c4e64bee371a521a23d27237334d1fd3076486",
+      "bytes": 1824
+    },
+    {
+      "path": "SOURCES.md",
+      "sha256": "c3cb992d766ebbdfcbbf568e6691457183a5ef514704af0a3eaf87409c1d083e",
+      "bytes": 2200
+    },
+    {
+      "path": "STATUS.md",
+      "sha256": "8fc336b3a49e29236bbd3283330ba9c57e2d54707d41d5276616a8fcc386f9e3",
+      "bytes": 1527
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "758787abf7c911fb718af81efb01b91fabfe92cb83ac8a541f3d2e278b54fc73",
+      "bytes": 1628
+    },
+    {
+      "path": "tools/capture_sources.py",
+      "sha256": "4c5537d87ae87004b9574fe2743b96287d401413ebe6feb5cc5b857cebb23a5a",
+      "bytes": 2926
+    },
+    {
+      "path": "tools/check_crypto.ps1",
+      "sha256": "15c730fc90f5dda0f0325e9fc776a44805c77381a50afcd74ef5dbbe1240bd87",
+      "bytes": 3527
+    },
+    {
+      "path": "tools/check_docs.py",
+      "sha256": "1c0d5fec9201327634e97cc4122f8f7c36a844219c89e4ad6e878245a294fa8d",
+      "bytes": 4848
+    },
+    {
+      "path": "wechat/dat.md",
+      "sha256": "429eaab4ebca75230e446216bf01cdecc98c356c0c62f7510fec3c8c276fd227",
+      "bytes": 3268
+    },
+    {
+      "path": "wechat/database-crypto.md",
+      "sha256": "af0ce3c43358ac8ad955dda286ec8e9a5b7603ae7a8115301881d9c5f648a997",
+      "bytes": 5019
+    },
+    {
+      "path": "wechat/emoticons.md",
+      "sha256": "223ef62d186be3e3ec066586a0d88c3fde42aa91119a1bdad8eacd272c39d1d7",
+      "bytes": 2156
+    },
+    {
+      "path": "wechat/export.md",
+      "sha256": "e2a45f0ddafa8b54fb4893bd22ad6ac09b99325a3ca3b4954feb6188962c40de",
+      "bytes": 3723
+    },
+    {
+      "path": "wechat/key-material.md",
+      "sha256": "a132cb3ba063b130223293a3cc48400cc5be827288dca24769ed62058b5ff3f2",
+      "bytes": 3667
+    },
+    {
+      "path": "wechat/records.md",
+      "sha256": "130ffbb6263b225c3dfb3f2c14cd1852a019c8b520505465eb414d58f7ec8eb7",
+      "bytes": 5447
+    },
+    {
+      "path": "wechat/scope.md",
+      "sha256": "fbbf24c7a4703d58957e0a208d4c9bb551db513645849d3c3d6a184b98c16fe8",
+      "bytes": 2099
+    },
+    {
+      "path": "wechat/sns.md",
+      "sha256": "b177c8bb0b9d257333f35c7a142b98159c54eac87c10341ab6b8e9f0b2091d63",
+      "bytes": 5961
+    },
+    {
+      "path": "wechat/storage.md",
+      "sha256": "dffdb29ff63fcbd0d99499ec321fdcc6ac7f23f14f74b0931ac1c04286fcb954",
+      "bytes": 2849
+    },
+    {
+      "path": "wechat/validation.md",
+      "sha256": "abaae7d951021bbcbb53cab15bcc8d16f78fb531e5b460640898a01c28f25613",
+      "bytes": 3403
+    },
+    {
+      "path": "wechat/voice.md",
+      "sha256": "a239bb4fc91a8b0b3f3bb235586654459b074cfcf393e354260a1a702eeff684",
+      "bytes": 3117
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "schema": 1,
+  "captured_at_utc": "2026-09-16T07:21:57.500981+00:00",
+  "source_repository": "https://github.com/leyan2174/wx-workbench",
+  "observed_head": "d4e22a0cc76f82d49afd33456002a32098ab9e04",
+  "status": "working-tree-not-frozen",
+  "review_scope": "Relevant sections and symbols, not every line of each file.",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "e0a49f298366154938f4bc775e3c08e80abff4c5613710fdce73eb984ebc4cee",
+      "bytes": 18055
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "958684992a3c894eb4f2d42d924a9a248b9ad5ba02b9fb6df308f77b6543debc",
+      "bytes": 2603
+    },
+    {
+      "path": "docs/README.md",
+      "sha256": "b5a920d6bcd343e89a0ed3b2777b518e0c997f097288ec861921074392fe0c4c",
+      "bytes": 2900
+    },
+    {
+      "path": "docs/architecture.md",
+      "sha256": "9a5451787fe5efc134eb2f0eed8181506488533f5184533a3bfc5e0a527e317b",
+      "bytes": 24498
+    },
+    {
+      "path": "docs/account-key-provider.md",
+      "sha256": "9b9cc33483e906bc65bda7accd07f5ad33b0d30d60017685c6afb21f0afbd72c",
+      "bytes": 6507
+    },
+    {
+      "path": "docs/communication-and-export.md",
+      "sha256": "df3923270025091611f70f614b4b32f99b1301466bf72d8c93df1252c980e01c",
+      "bytes": 4620
+    },
+    {
+      "path": "src/config.rs",
+      "sha256": "4be65cba79b2ecc87aef61f3a579ff12c7a3e3f45aaf2a8cf0bbc35f34489b90",
+      "bytes": 14890
+    },
+    {
+      "path": "src/crypto/mod.rs",
+      "sha256": "24dc87e587bd608cfb77f60e52355ca6ac9a9f31354446da9a05d05dd15f923a",
+      "bytes": 8825
+    },
+    {
+      "path": "src/crypto/auth.rs",
+      "sha256": "6e0c724d5806a22114e736e6089fdc63b3668beb31313d168690994a33e7c4ba",
+      "bytes": 1539
+    },
+    {
+      "path": "src/crypto/wal.rs",
+      "sha256": "d1c493e12625a8e5693edf4ce83643b4bbc65e93901341badc0015ae48b22a55",
+      "bytes": 5283
+    },
+    {
+      "path": "src/scanner/windows/account.rs",
+      "sha256": "f4beffc62ac3b9b7f3b9290ed82a03287c9280c10298a123ca8cae4742fd3584",
+      "bytes": 14774
+    },
+    {
+      "path": "src/attachment/decoder/mod.rs",
+      "sha256": "1a51137a23a656a9851a51376a286a764c171648615382663e7b8ddaa9e48acb",
+      "bytes": 7049
+    },
+    {
+      "path": "src/attachment/decoder/v2.rs",
+      "sha256": "a1aee2544e10c25dafe308fc7eb48c44816ee69277bddb9b246c1f90c6f64bdb",
+      "bytes": 5576
+    },
+    {
+      "path": "src/attachment/decoder/v1_xor.rs",
+      "sha256": "bc603b8b51a0b7e7ee7c6c1408a8e1b8f212f4ff2552496ef93025e82edd0952",
+      "bytes": 6192
+    },
+    {
+      "path": "src/adapters/wechat/contacts/mod.rs",
+      "sha256": "5d4015ce0a372007ddbc2e1d40f20cd903e616a99c80f36a16b3d797fc50831d",
+      "bytes": 15991
+    },
+    {
+      "path": "src/adapters/wechat/messages/sessions.rs",
+      "sha256": "8caa99c0635054cd24dbb1565c90a830b4fa2224205e499be60d4fd4f90c7338",
+      "bytes": 5903
+    },
+    {
+      "path": "src/adapters/wechat/messages/read/mod.rs",
+      "sha256": "c3d52d6f2f85e49c809ef7eb339b620388829e3ed8ac5483aa15b50bf4b2fd11",
+      "bytes": 32260
+    },
+    {
+      "path": "src/adapters/wechat/messages/summary.rs",
+      "sha256": "d787926e9c170dbf9996e78035036645b25bcb4ed7a099b0f350746795241a98",
+      "bytes": 5414
+    },
+    {
+      "path": "src/adapters/wechat/messages/export_content.rs",
+      "sha256": "7c896b4044f5aed54bc8c4b38c1318e326f9d1bc55c0c3ce836f21e39cb243c0",
+      "bytes": 24048
+    },
+    {
+      "path": "src/adapters/wechat/media/resource.rs",
+      "sha256": "3679bd3452893b334b320fd72abc43f990eaeea715a008e9d72721dae146d81a",
+      "bytes": 8757
+    },
+    {
+      "path": "src/adapters/wechat/media/strict_image.rs",
+      "sha256": "f73d3afe6653c18aa181bb19a64ffd16277f7c39729f336beec6a0c94db08b33",
+      "bytes": 7607
+    },
+    {
+      "path": "src/adapters/wechat/media/legacy_dat.rs",
+      "sha256": "da9524ec733efb1dabc4672c10cf917f914cb8af0d231b746469f5aa56a5c2f6",
+      "bytes": 5896
+    },
+    {
+      "path": "src/adapters/wechat/media/directory_layout.rs",
+      "sha256": "3e3a64eeec8efadb54d205fa2193b09d98bf235613e12f502b9eb0b4dbd7bd6a",
+      "bytes": 3918
+    },
+    {
+      "path": "src/adapters/wechat/media/voice.rs",
+      "sha256": "ae3a79d6bc29fd8b91f92308c70c9dbd8944e7759ddf41c6a10631ca477219f4",
+      "bytes": 39030
+    },
+    {
+      "path": "src/adapters/wechat/media/sns_keystream.rs",
+      "sha256": "ac108b62daa3c4025f9288b607f1f15512d919cae79ef134c9e4572c580db337",
+      "bytes": 15080
+    },
+    {
+      "path": "src/adapters/wechat/media/SNS_KEYSTREAM.md",
+      "sha256": "7b33cf7fc646a71121a7e432dada770fc21025212c993e411c767108b1a9cf13",
+      "bytes": 7834
+    },
+    {
+      "path": "src/adapters/wechat/emoticons/remote_format.rs",
+      "sha256": "ef15d849510f8797c5fa7818e397d4f9bc47b0b3b2546dbfbf751a38e21b93a0",
+      "bytes": 2709
+    },
+    {
+      "path": "src/adapters/wechat/moments.rs",
+      "sha256": "f4473d66b42bc59e00f48579bbf9baf2073cb25f0fd76703a7d7e32d05f38bcf",
+      "bytes": 29851
+    },
+    {
+      "path": "src/adapters/wechat/moments/legacy.rs",
+      "sha256": "babe13d70830aebc44281e15831887b2ffc0042b72cba951492509a324d6934d",
+      "bytes": 7644
+    },
+    {
+      "path": "src/adapters/wechat/moments/decode.rs",
+      "sha256": "5f12a2e4270f3fe293e2e0e658c6768a7b3618119ce091987652cb11903ae47b",
+      "bytes": 7911
+    },
+    {
+      "path": "src/adapters/wechat/moments/query_xml.rs",
+      "sha256": "e2b28311bd236d66a4dac574e019849ec5cb0b1f833a6834bc2954a3687be519",
+      "bytes": 9218
+    },
+    {
+      "path": "src/toolkit/audio/mod.rs",
+      "sha256": "b522c83b56b48aa83e97c280d9bd7fcacfc093bc4585a9c4819f7aea1ab3d468",
+      "bytes": 9357
+    },
+    {
+      "path": "src/toolkit/databases.rs",
+      "sha256": "50fa6c95ea61e78f1577f512d769162650dec2a82f603a60fe48821fd14f8e80",
+      "bytes": 7777
+    },
+    {
+      "path": "src/toolkit/emoticons/download.rs",
+      "sha256": "23d9e8365bd72d5c0e2e4a81870f3bea9fa4395d3ff64707656ab15cbb7da8a1",
+      "bytes": 10198
+    },
+    {
+      "path": "src/toolkit/sns/album_images.rs",
+      "sha256": "c09aaf87641e5427516ce473e941b5beb9a8c5a2dcce8f4217db25a19dbe19e0",
+      "bytes": 13357
+    }
+  ]
+}

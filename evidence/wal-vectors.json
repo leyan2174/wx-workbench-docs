@@ -1,0 +1,112 @@
+{
+  "checks": [
+    "checksum-arithmetic-and-byte-order",
+    "no-commit",
+    "uncommitted-tail",
+    "big-endian-checksum",
+    "same-page-last-write",
+    "shrink-then-grow",
+    "partial-tail-ignored",
+    "bad-frame-stops-before-later-commit",
+    "generation-mismatch-stops",
+    "header-checksum-rejected",
+    "truncated-header-rejected",
+    "overwritten-bad-HMAC-still-rejected-output-preserved",
+    "HMAC-binds-little-endian-real-page-number",
+    "WAL-generation-not-authentication-salt",
+    "valid-checksum-over-limit-rejected"
+  ],
+  "vectors": [
+    {
+      "name": "no-commit",
+      "frames": [
+        [
+          1,
+          0,
+          10
+        ]
+      ],
+      "checksum_little_endian": true,
+      "bytes": 4152,
+      "sha256": "1e179d796a1ad734b1c7bfabb3abb5460753f996d79a6a9c9d806cd1cd227a5a",
+      "selected_frames": 0,
+      "final_pages": null
+    },
+    {
+      "name": "uncommitted-tail",
+      "frames": [
+        [
+          1,
+          2,
+          10
+        ],
+        [
+          2,
+          0,
+          20
+        ]
+      ],
+      "checksum_little_endian": true,
+      "bytes": 8272,
+      "sha256": "7da7c26a70742e43819e03d8e4d23e8d6735994707ca65adc3ddb25bb2d8c8b4",
+      "selected_frames": 1,
+      "final_pages": 2
+    },
+    {
+      "name": "big-endian-checksum",
+      "frames": [
+        [
+          1,
+          1,
+          10
+        ]
+      ],
+      "checksum_little_endian": false,
+      "bytes": 4152,
+      "sha256": "c70fc678ead39f6f4fb09349861cee1897c4dc209307374d6eb6b044bce39ef9",
+      "selected_frames": 1,
+      "final_pages": 1
+    },
+    {
+      "name": "same-page-last-write",
+      "frames": [
+        [
+          1,
+          1,
+          10
+        ],
+        [
+          1,
+          1,
+          20
+        ]
+      ],
+      "checksum_little_endian": true,
+      "bytes": 8272,
+      "sha256": "0e0ab7b341738353e6175fd60cedf8191c4cebfafedde3c910687d4926a0609d",
+      "selected_frames": 2,
+      "final_pages": 1
+    },
+    {
+      "name": "shrink-then-grow",
+      "frames": [
+        [
+          1,
+          1,
+          10
+        ],
+        [
+          3,
+          3,
+          30
+        ]
+      ],
+      "checksum_little_endian": true,
+      "bytes": 8272,
+      "sha256": "d84f0a00713a05b8278f2fa39de005f0096c952a65c5840af5afc307c2656209",
+      "selected_frames": 2,
+      "final_pages": 3
+    }
+  ],
+  "limits": "Synthetic structure/authentication/application tests; not AES end-to-end, production-code execution, or real WeChat evidence."
+}
