@@ -77,6 +77,14 @@ src/cli/web_native.rs
 src/service/web.rs
 src/web/voices.rs
 src/web/artifacts.rs
+src/service/image_import.rs
+src/daemon/operations/image_import.rs
+src/daemon/operations/export_sns/source.rs
+src/application/image_publication.rs
+src/attachment/local_files.rs
+src/infrastructure/output_tree/mod.rs
+src/application/moments/cache.rs
+src/adapters/wechat/moments/cache.rs
 '''.splitlines()
 
 if __name__ == '__main__':

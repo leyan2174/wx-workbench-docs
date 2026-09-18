@@ -1,6 +1,6 @@
 # 当前实现与执行边界
 
-证据：C；本页以固定代码提交 `ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3` 为依据。阅读范围为 CLI 注册、模块声明、worker 材料、初始化、计划与产物、Windows 进程创建的相关符号；哈希及边界见[版本证据](../evidence/versions.md)。源码可证实不等于本任务已运行生产测试，也不描述微信自身的内部架构。
+证据：C；本页以固定代码提交 `468bcc50aadc4b2f1e4901c1038b19de8b8c2a87` 为依据。阅读范围为 CLI 注册、模块声明、worker 材料、初始化、计划与产物、Windows 进程创建的相关符号；哈希及边界见[版本证据](../evidence/versions.md)。源码可证实不等于本任务已运行生产测试，也不描述微信自身的内部架构。
 
 ## 入口与职责
 
@@ -65,3 +65,11 @@ flowchart TB
 `HANDLE_LIST` 只传递标准输入输出的临时副本，Job 句柄不继承。worker 的私有请求是有界 stdin 帧，不进入 argv 或环境变量。普通 Job 不允许 breakaway；只有明确授权的账号捕获保留让用户应用继续运行的专用例外，worker 本身仍受监督。
 
 取消、超时和正常退出均需回收受管后代；停止等待不证明进程已终止。强制终止不执行 Rust 析构，可能遗留暂存文件；Job 归属不提供多文件事务、磁盘配额或自动续跑。此处是固定源码边界，本任务未执行进程测试或真实微信实验。
+
+## 图片材料与离线发布
+
+宿主通过 `wx keys import-image --stdin` 输入至多4096字节的严格JSON图片材料；CLI将材料封装为当前用户DPAPI密文，worker验证固定账号和实际V2样本，再经daemon broker按预期revision执行CAS更新，保留其他材料。`--no-save`仅验证。普通解码不接收明文AES覆盖，MCP/Web不开放该宿主导入入口；无Runtime的明文离线旁路不受支持。XOR格式字节及独立视频恢复材料不因此取消。
+
+离线SNS仍接受显式数据库、联系人和缓存来源，但固定Runtime/ConfigPin、实际文件及已有/缺失SQLite侧车。有缓存时逐个验证真实V2候选与受保护图片材料；无缓存也在最终发布前核验来源及配置，且不读取图片材料。fresh在目录rename前复核，update逐文件persist前复核；已经提交的前缀不回滚，不构成跨文件或跨对象原子CAS。
+
+目录Pin使用 `FILE_READ_ATTRIBUTES | FILE_LIST_DIRECTORY`（access `0x81`）及读写共享（share `3`），禁止删除共享；祖先目录同样固定。允许子文件创建与原子替换，不表示目录内容被冻结。普通源文件保持只读共享（share `1`），另行核验文件身份。缺少列目录权限的路径明确拒绝，无attributes-only降级；专门no-list ACL场景尚未实测。

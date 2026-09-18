@@ -1,6 +1,6 @@
 # 语音关联、原始SILK与外部解码
 
-当前证据：C；来源为固定提交 `ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3` 的 `src/adapters/wechat/media/voice.rs`、`src/adapters/wechat/media/voice_export.rs`、`src/daemon/operations/voices.rs` 及 `src/business/VOICE_EXPORT.md`。本章的消息关联与原始导出说明属于当前实现；后文封包规范化和 PCM 示例是历史代码参考与独立合成检查，不属于当前产品能力。
+当前证据：C；来源为固定提交 `468bcc50aadc4b2f1e4901c1038b19de8b8c2a87` 的 `src/adapters/wechat/media/voice.rs`、`src/adapters/wechat/media/voice_export.rs`、`src/daemon/operations/voices.rs` 及 `src/business/VOICE_EXPORT.md`。本章的消息关联与原始导出说明属于当前实现；后文封包规范化和 PCM 示例是历史代码参考与独立合成检查，不属于当前产品能力。
 
 **没有独立“语音密钥”的证据。** 数据库层解密后取得 SILK 字节；不能把音频解码器参数解释成加密密钥。
 

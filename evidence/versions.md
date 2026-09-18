@@ -1,8 +1,8 @@
 # 版本与永久链接
 
-微信机制的目标范围为 Windows 微信 4.1.13.65；不代表每章都有该版本实机验证。当前项目实现固定在代码提交 `ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3`，阅读日期为2026-09-18。该提交已在本地Git对象库解析核实；本次不读取源码工作树作为事实基线，不把其他版本或未提交工作当作该提交成果。
+微信机制的目标范围为 Windows 微信 4.1.13.65；不代表每章都有该版本实机验证。当前项目实现固定在代码提交 `468bcc50aadc4b2f1e4901c1038b19de8b8c2a87`，阅读日期为2026-09-18。该提交已在本地Git对象库解析核实；本次不读取源码工作树作为事实基线，不把其他版本或未提交工作当作该提交成果。
 
-代码仓：[leyan2174/wx-workbench](https://github.com/leyan2174/wx-workbench)。[固定版本](https://github.com/leyan2174/wx-workbench/tree/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3)及[source-manifest.json](source-manifest.json)提供逐文件链接、Git blob SHA-256与字节数。Private链接需要访问权限，未逐链接验证远端可读性。
+代码仓：[leyan2174/wx-workbench](https://github.com/leyan2174/wx-workbench)。[固定版本](https://github.com/leyan2174/wx-workbench/tree/468bcc50aadc4b2f1e4901c1038b19de8b8c2a87)及[source-manifest.json](source-manifest.json)提供逐文件链接、Git blob SHA-256与字节数。Private链接需要访问权限，未逐链接验证远端可读性。
 
 ## 证据范围
 
@@ -13,7 +13,7 @@
 可复核命令如下，`<source-repository>`由调用方指向源码仓库：
 
 ```text
-python tools/capture_sources.py <source-repository> --publication-commit ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3 --check
+python tools/capture_sources.py <source-repository> --publication-commit 468bcc50aadc4b2f1e4901c1038b19de8b8c2a87 --check
 ```
 
 ## 历史证据的用途
@@ -27,3 +27,11 @@ python tools/capture_sources.py <source-repository> --publication-commit ddb9d09
 当前README、架构、计划与产物、语音及相关实现说明按上述固定提交修订。新原始语音任务只写入全新目录，不能据此宣称全部入口能力对等或尚未纳入本提交的材料治理已经完成。当前候选文件指纹由[candidate-manifest.json](candidate-manifest.json)记录，不包含该清单自身或Git元数据。
 
 本轮文档已通过Private交付验收，发布提交及远端核对结果另行记录；验收不改变Private可见性。源码、独立文档、二进制和npm分别验收；固定版本可读取或通过文档检查不代表公开分发许可已解决。来源及许可边界见[来源说明](../SOURCES.md)。
+
+## 本次最小同步与运行证据范围
+
+本次只同步固定提交的宿主图片材料导入、revision/CAS、离线SNS来源与发布复核、目录及文件Pin边界；未提交的后续实现不纳入源码事实。来源清单直接核对该提交的Git blob，不使用工作树。
+
+维护方交付报告记载：全量测试首次为2361通过、6失败、22忽略；两个失败target修复夹具后分别复验33通过/0失败/1忽略及4通过/0失败。按目标替换失败结果后合并为2367通过、0剩余失败、22忽略，不是一次全绿。运行工作树包含4项未提交后续工作（G5）的测试，因此该总数不是固定提交独立运行的证明，也不表示G5已交付。本任务只核对报告与文档、来源，不运行Rust或浏览器测试。
+
+专门no-list ACL、真实账号及媒体质量仍未验证；后续增量目标授权、表情任务与既有目录复用等能力不属于本次已完成范围。三入口未完全对等，上游授权未决项不变。

@@ -4,9 +4,9 @@
 
 本仓库的主要内容无需打开项目源码即可阅读。可重建程度逐项见[覆盖矩阵](evidence/coverage.md)。项目实现仓库为 [wx-workbench](https://github.com/leyan2174/wx-workbench)。本文档已通过Private交付验收，尚未宣布公开验收完成。
 
-2026-09-18按固定源码提交修订入口、不可变计划、受控产物、创建时Job归属及跨入口原始语音任务，范围见[版本证据](evidence/versions.md)。当前候选目标仍为Private；文档合成检查不等于生产版本运行验收。
+2026-09-18按固定源码提交修订入口、不可变计划、受控产物、创建时Job归属、原始语音任务及宿主图片材料/SNS发布边界，范围见[版本证据](evidence/versions.md)。当前候选目标仍为Private；文档合成检查不等于生产版本运行验收。
 
-当前Private源码基线为`ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3`。上游授权证据仍有未决项，见[来源与许可](SOURCES.md)；不把本候选的Private交付条件解释为公开衍生源码已获准分发。
+当前Private源码基线为`468bcc50aadc4b2f1e4901c1038b19de8b8c2a87`。上游授权证据仍有未决项，见[来源与许可](SOURCES.md)；不把本候选的Private交付条件解释为公开衍生源码已获准分发。
 
 ## AI 作者声明
 

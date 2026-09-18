@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "candidate": "private-ddb9d09-2026-09-18",
-  "digest": "09217b592fb91b1b8ae1c942f52b234e5cfc2e72fba9379c243782db86ab4e17",
+  "candidate": "private-468bcc5-2026-09-18",
+  "digest": "c9fc7b2f7e273b58fc9e4141a1af153e1fff301ae9c419d2dcae14648601936a",
   "files": [
     {
       "path": "AGENTS.md",
@@ -20,18 +20,18 @@
     },
     {
       "path": "README.md",
-      "sha256": "7355cf9c30efa4ebbdc88bfcba004b914568fcea25dcb23f29acdcf9fbae7f30",
-      "bytes": 2907
+      "sha256": "3c565a0bfe18188bef756712946633f9b3d4bc5825a55dcd97b061c6a0e859ca",
+      "bytes": 2935
     },
     {
       "path": "SOURCES.md",
-      "sha256": "c1d22c2122cbc558dc902b479bf58877e4cbd3bd43ec0749359c33ab353839b2",
+      "sha256": "8a5565dd2c4c3aafa6f8925de9d69ea3cce59039d1b81701fc7a003ffd85d4ef",
       "bytes": 3030
     },
     {
       "path": "STATUS.md",
-      "sha256": "0d6da8d257dfafb10d0ffbd11e101330f4757e1ad332e5e195a427fba0437102",
-      "bytes": 2103
+      "sha256": "0c92b25c80f5c0577fa5a34b18b5b8aca4e475ae40da5c8d8214a5d212658880",
+      "bytes": 2443
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -65,13 +65,13 @@
     },
     {
       "path": "evidence/source-manifest.json",
-      "sha256": "055a329c9bef4de165d2a7b5879d80f27cd5d0c9cb42c4ebc0645a9dced89baf",
-      "bytes": 37497
+      "sha256": "8b1c5a81252dcb935370b33ae65e469939a7994538f63d8416f422e6ff438e78",
+      "bytes": 42060
     },
     {
       "path": "evidence/versions.md",
-      "sha256": "e8257d312b5ab48491ea84108150dd801c38e3fdd44cc02ee7e28de81f12d12c",
-      "bytes": 3088
+      "sha256": "e325c9f1fc72caf7b712e84357caad9ee8f672d84431891d5a43fca771f0c299",
+      "bytes": 4110
     },
     {
       "path": "evidence/wal-vectors.json",
@@ -80,18 +80,18 @@
     },
     {
       "path": "implementation/architecture.md",
-      "sha256": "edecff62c43e05f4f83992dc7c08020bf24b269f3aae778f3fa6ec14efcb187e",
-      "bytes": 5753
+      "sha256": "66a3e98531d0dc6a09fc769f2e84c8e0ec4e912af1d8b951125a8e3e9251d508",
+      "bytes": 7101
     },
     {
       "path": "implementation/plans-and-artifacts.md",
-      "sha256": "ea18bc7b5c2093dc9f072fd7886f694c7bb1314d508f986af7970b02f308d1f9",
+      "sha256": "4455af330ec5d083bfefe78ef0918946a3e9f306cac39d115e3f0c063de191c4",
       "bytes": 6646
     },
     {
       "path": "tools/capture_sources.py",
-      "sha256": "b8dd111b9579dab72c8da4d4bcf59f77c78480e216fa6e2a0e1b2e910029617c",
-      "bytes": 6086
+      "sha256": "b1c135d57e4f77b3a92936e60c89390239b9a828465872607f4a7402dd82ba8e",
+      "bytes": 6370
     },
     {
       "path": "tools/check_crypto.ps1",
@@ -130,8 +130,8 @@
     },
     {
       "path": "wechat/key-material.md",
-      "sha256": "dd88e108d95acb6faecb03b012455257fbba26f1b2be93cc97128040ca000cd1",
-      "bytes": 4812
+      "sha256": "cb3cffca363b8556adb3dddbb4dddca511683cbc4e48dd490a06d51da2badb2b",
+      "bytes": 6062
     },
     {
       "path": "wechat/records.md",
@@ -145,8 +145,8 @@
     },
     {
       "path": "wechat/sns.md",
-      "sha256": "4ef28db43652190a0c5f024ded2093f59e61312284141ded04c72b452bb49259",
-      "bytes": 6075
+      "sha256": "a613d3cbe16dc3b4a88ab75cdaaf517ce36aef967bb6fa92b5b1ff552f01d734",
+      "bytes": 7392
     },
     {
       "path": "wechat/storage.md",
@@ -160,7 +160,7 @@
     },
     {
       "path": "wechat/voice.md",
-      "sha256": "695d6f0b889594649f707614a2ec8a5641d0e72052d4b23420c8e0976d6d9228",
+      "sha256": "42939200d01d8669892a30967b65279e46a70b690e03b1d4293578696ebcd6f7",
       "bytes": 8744
     }
   ]
