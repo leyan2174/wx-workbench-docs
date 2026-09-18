@@ -2,11 +2,11 @@
 
 独立保存 Windows 微信本地数据机制与可重建知识。已知目标为 **Windows 微信 4.1.13.65**；这是源码适配的目标范围，不代表所有章节均有该版本的独立实机验证。
 
-本仓库的主要内容无需打开项目源码即可阅读。可重建程度逐项见[覆盖矩阵](evidence/coverage.md)。项目实现仓库为 [wx-workbench](https://github.com/leyan2174/wx-workbench)。本文档当前为首版审阅候选，尚未宣布公开验收完成。
+本仓库的主要内容无需打开项目源码即可阅读。可重建程度逐项见[覆盖矩阵](evidence/coverage.md)。项目实现仓库为 [wx-workbench](https://github.com/leyan2174/wx-workbench)。本文档已通过Private交付验收，尚未宣布公开验收完成。
 
-2026-09-17已按当前源码定向更新架构、worker材料交付、初始化及迁移路径，复核范围见[版本证据](evidence/versions.md)。当前发布目标为Private；旧合成检查不等于当前生产版本的运行验收。
+2026-09-18按固定源码提交修订入口、不可变计划、受控产物、创建时Job归属及跨入口原始语音任务，范围见[版本证据](evidence/versions.md)。当前候选目标仍为Private；文档合成检查不等于生产版本运行验收。
 
-当前Private源码基线为`b9fcd4c9a5de5f3290502235af36bc4a404bf1f9`。上游授权证据仍有未决项，见[来源与许可](SOURCES.md)；不把本候选的Private交付条件解释为公开衍生源码已获准分发。
+当前Private源码基线为`ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3`。上游授权证据仍有未决项，见[来源与许可](SOURCES.md)；不把本候选的Private交付条件解释为公开衍生源码已获准分发。
 
 ## AI 作者声明
 
@@ -23,14 +23,15 @@
 5. [图片 DAT](wechat/dat.md)
 6. [表情媒体](wechat/emoticons.md)
 7. [朋友圈与 SNS 媒体](wechat/sns.md)
-8. [语音提取与编解码](wechat/voice.md)
+8. [语音关联、原始SILK与外部解码](wechat/voice.md)
 9. [聊天与朋友圈导出](wechat/export.md)
 10. [密钥材料及生命周期](wechat/key-material.md)
 11. [验证方法与未知项](wechat/validation.md)
 
 ## 项目实现与通用设计
 
-- [当前实现与目标边界](implementation/architecture.md)
+- [当前实现与执行边界](implementation/architecture.md)
+- [不可变计划与受控产物](implementation/plans-and-artifacts.md)
 - [账号隔离、确定定位与原子发布](design/reliable-processing.md)
 
 ## 证据与贡献

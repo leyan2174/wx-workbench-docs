@@ -1,51 +1,67 @@
 # 当前实现与执行边界
 
-证据：C；2026-09-17先复核`f6f3ba9479f693b8dad73586a0b284016fd3d1b3`，再映射至Private源码基线`b9fcd4c9a5de5f3290502235af36bc4a404bf1f9`；两者间生产机制源码未变，变化为文档与测试断言。哈希与阅读范围见[版本](../evidence/versions.md)。本页不等于整仓运行验收，也不描述微信自身架构。
+证据：C；本页以固定代码提交 `ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3` 为依据。阅读范围为 CLI 注册、模块声明、worker 材料、初始化、计划与产物、Windows 进程创建的相关符号；哈希及边界见[版本证据](../evidence/versions.md)。源码可证实不等于本任务已运行生产测试，也不描述微信自身的内部架构。
 
-## 当前实现
+## 入口与职责
 
-CLI、MCP和本地Web负责各自输入输出。业务执行以账号为隔离单位，由daemon装配查询快照、任务和worker生命周期；不是所有工作都在单一线程或持久任务队列。微信适配器负责SQLite字段、媒体格式及关联，业务契约表达联系人、消息和媒体结果。
+CLI、MCP 和本地 Web 适配输入输出。daemon 按固定账号装配查询快照、前台操作、持久任务与 worker 生命周期；查询、前台租约与持久队列有不同的执行及取消语义。微信适配器解释 SQLite 字段、记录关联及媒体格式，业务契约表达可复用的对象和规则。
 
-数据库、图片、表情和SNS拥有不同的材料与算法，不能抽成“同一个媒体解密器”。DAT是纯字节恢复；SNS运行时不下载或选择账号；表情下载器调用纯CBC恢复后继续转换与发布。宿主负责授权、路径、预算和输出。
+CLI 使用 `wx chats`、`wx moments`、`wx media`、`wx keys`、`wx database`、`wx emoticons` 等功能分组，以及 `wx setup`、`wx cleanup`、`wx web`、`wx voices`、`wx tasks` 等入口。`wx toolkit` 不受支持；固定版本的解析测试明确拒绝该命令，源码也没有 `src/cli/toolkit.rs` 或 `src/daemon/operations/toolkit.rs`。命令示例不能从历史工具箱路径推导。
 
 ```mermaid
 flowchart LR
-    A[CLI / MCP / Web] --> B[固定账号的执行宿主]
-    B --> C[业务契约与查询/操作]
-    C --> D[微信数据与媒体适配器]
-    D --> E[数据库页认证 / DAT / 表情 / SNS接口]
-    B --> F[快照 / worker / 输出发布]
+    A[CLI / MCP / Web] --> B[固定账号 daemon]
+    B --> Q[查询快照与租约]
+    B --> W[受监督 worker]
+    W --> P[用例编排 / 不可变计划]
+    Q --> D[业务契约与微信适配器]
+    P --> D
+    P --> F[受保护发布与产物登记]
+    B --> R[按账号和产物 ID 读取]
+    R --> F
 ```
 
-此图是本次原创的职责概览，不表示所有调用都沿单一线性路径。`src/toolkit`已物理删除；仍存在的`src/cli/toolkit.rs`与`src/daemon/operations/toolkit.rs`是正式`wx toolkit`命令分组和执行分发，不是旧Toolkit架构层。
-
-## 当前职责目录
+图表示职责关系，不表示所有调用必经全部节点或所有工作都在同一进程。
 
 | 路径 | 职责 |
 |---|---|
-| `src/application/` | 聊天归档、增量导出、数据库导出、朋友圈、转录、监控等用例编排 |
+| `src/cli/`、`src/web/`、`src/mcp/` | 命令、HTTP 与 JSON-RPC 入口 |
+| `src/service/` | 类型化请求、通信、计划引用及产物契约 |
+| `src/daemon/` | 账号快照、任务、worker 监督、密钥 broker 和产物交付 |
+| `src/application/` | 聊天归档、计划与增量、数据库导出、朋友圈、图片发布、监控及清理 |
 | `src/business/` | 业务模型和窄接口 |
-| `src/adapters/wechat/` | 微信SQLite字段、记录关联与私有媒体格式 |
-| `src/infrastructure/` | 发布、输出树、SQLite验证、音频、转录后端、取消及配置事务 |
-| `src/web/` | HTTP、SSE和静态资源入口 |
-| `src/daemon/` | 固定账号查询状态、任务、worker监督及密钥broker |
-| `src/service/` | 协议、操作请求与worker访问载体 |
-| `src/windows_process/`、`src/private_file.rs` | 受控Windows进程及私有文件保护 |
+| `src/adapters/wechat/` | SQLite 字段、记录关联及微信私有格式 |
+| `src/infrastructure/` | 文件发布、输出树、配置、SQLite 验证、清理及取消 |
+| `src/windows_process/`、`src/private_file.rs` | 受控 Windows 进程和私有文件保护 |
 
-## worker与初始化材料边界
+固定版本提供同步 `wx voices`、持久任务 `export_voices` 的原始 SILK 导出，以及只读语音目录；不提供 WAV/MP3 转码或 ASR。`src/infrastructure/audio`、转录基础设施和应用转录模块不属于该版本目录。数据库认证、DAT、表情 CBC、SNS 密钥流与外部音频解码也不能概括为同一种媒体解密算法。详见[语音](../wechat/voice.md)。
 
-`src/daemon/worker_keys.rs`负责broker授权、快照读取与更新，`src/service/worker_keys.rs`提供访问载体及客户端。授权绑定账号运行上下文、配置、daemon父身份、子进程PID和活跃进程句柄、capability及revision；访问载体通过受监督worker的私有输入交付。账号、数据库、图片材料按权限读取或预装；账号材料只取`verified_account_key()`结果并校验32字节。错误身份、权限、过期代际或进程退出均拒绝，输出脱敏、临时材料清零。
+## 材料与初始化
 
-worker提交expected revision，由daemon原子更新Store并处理同请求幂等；account捕获的Account与Databases在一次更新中提交。worker不自行选择持久化格式，外部替换Store不承诺自动热重载。
+`src/daemon/worker_keys.rs` 负责 broker 授权、快照读取及更新，`src/service/worker_keys.rs` 提供访问载体与客户端。授权绑定账号运行上下文、配置、daemon 父身份、子进程 PID、活跃进程句柄、capability 和 revision。载体通过受监督 worker 的私有输入交付；账号材料只取已验证的 32 字节值。身份、权限、代际或进程状态不符时拒绝；输出脱敏，临时材料清零。
 
-已绑定正式运行上下文时，saved/memory经broker取得初始化种子并提交数据库材料，account经broker提交账号与数据库材料。首次初始化或配置修复无法绑定正式上下文时，`src/daemon/operations/init.rs`仍直接创建/更新Store，只允许显式memory/account，saved拒绝。不能称全部初始化已经broker化，也不能把daemon目录名理解成所有操作都在同一进程内。
+worker 携带预期 revision 请求更新，由 daemon 原子保存 Store 并处理同请求幂等。账号捕获的账号与逐库材料在一次更新中提交；外部替换 Store 不承诺自动热重载。
+
+已绑定正式运行上下文时，saved/memory 经 broker 获取初始化种子并提交逐库材料，account 提交账号及逐库材料。首次初始化或配置修复无法绑定正式上下文时，`src/daemon/operations/init.rs` 直接创建或更新 Store，只允许显式 memory/account，saved 拒绝。材料和配置分别原子发布，不是跨文件事务。
 
 ```mermaid
 flowchart TB
-    A[已绑定账号的受监督 worker] -->|capability / expected revision| B[daemon broker]
+    A[已绑定账号 worker] -->|capability / expected revision| B[daemon broker]
     B --> C[账号快照与原子 Store 更新]
-    D[首次初始化 / 配置修复] --> E[init.rs bootstrap 分支]
+    D[首次初始化 / 配置修复] --> E[初始化 bootstrap]
     E -->|直接创建或更新| F[Store]
 ```
 
-2026-09-16所述“src/toolkit仍存在”“worker尚未统一”及目标结构图已过时，本版替换为当前职责和例外图。所有图源均在本文，无外链资产。本轮仅做源码定向阅读与文档检查，未执行生产Rust构建、进程测试或真实账号实验；其他任务的测试报告不自动成为本任务的独立验收。Private发布、Public转换、npm及二进制发布仍分别管理。
+## 计划与受控产物
+
+`chat_plan`、`chat_plan_review`、`chat_plan_apply` 使用现有 daemon 任务服务。计划引用绑定任务、产物 ID 和 SHA-256；审阅生成新版本，只修改选择标记，不原地改写旧计划，也不产生审批状态。执行校验固定账号、配置、内容与选集，发布到新的任务目录。
+
+原始语音任务与同步CLI共享选择和严格关联，任务将SILK/证据作为完整组登记到新任务根。产物登记与文件落盘是不同状态；只有验证通过的登记产物可读取，不能通过任意路径浏览磁盘。计划、读取授权、取消窗口和计数限制见[计划与产物](plans-and-artifacts.md)。这不是所有 CLI 导出能力已在 MCP/Web 对等开放的声明。
+
+## 创建时 Job 归属
+
+受控进程使用 Windows 10+ 的 `PROC_THREAD_ATTRIBUTE_JOB_LIST`，在 `CreateProcessW` 时绑定 kill-on-close Job，并以挂起状态创建，再恢复执行。生产路径不回退为创建后再绑定；系统不支持或宿主 Job 不兼容时明确失败。
+
+`HANDLE_LIST` 只传递标准输入输出的临时副本，Job 句柄不继承。worker 的私有请求是有界 stdin 帧，不进入 argv 或环境变量。普通 Job 不允许 breakaway；只有明确授权的账号捕获保留让用户应用继续运行的专用例外，worker 本身仍受监督。
+
+取消、超时和正常退出均需回收受管后代；停止等待不证明进程已终止。强制终止不执行 Rust 析构，可能遗留暂存文件；Job 归属不提供多文件事务、磁盘配额或自动续跑。此处是固定源码边界，本任务未执行进程测试或真实微信实验。

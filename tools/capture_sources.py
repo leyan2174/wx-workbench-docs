@@ -1,4 +1,8 @@
-"""Capture metadata of explicitly reviewed source files, never account data."""
+"""Capture selected source blobs from an explicit immutable Git commit.
+
+Never read source working-tree files or account data. Hash capture is not a full
+source audit; chapter text states which relevant symbols were reviewed.
+"""
 import argparse
 import hashlib
 import json
@@ -32,7 +36,6 @@ src/adapters/wechat/moments.rs
 src/adapters/wechat/moments/legacy.rs
 src/adapters/wechat/moments/decode.rs
 src/adapters/wechat/moments/query_xml.rs
-src/infrastructure/audio/mod.rs
 src/application/database_decryption.rs
 src/application/emoticons/download.rs
 src/application/moments/album_images.rs
@@ -47,55 +50,83 @@ src/daemon/operation_worker.rs
 src/service/worker_keys.rs
 src/service/operation_requests/key_provider.rs
 src/adapters/wechat/media/assets/README.md
+src/cli/chats.rs
+src/cli/voices.rs
+src/service/chat_plan.rs
+src/service/task_artifacts.rs
+src/service/plan.rs
+src/service/operation_requests/plan.rs
+src/daemon/operations/plan_tasks.rs
+src/daemon/tasks/plan_artifacts.rs
+src/daemon/tasks/artifacts.rs
+src/daemon/tasks/artifact_file.rs
+src/daemon/tasks/process.rs
+src/windows_process/managed.rs
+src/windows_process/managed/native.rs
+src/windows_process/README.md
+src/business/VOICE_EXPORT.md
+src/daemon/operations/voices.rs
+src/adapters/wechat/media/voice_export.rs
+src/mcp/PROTOCOL.md
+docs/task-artifacts.md
+src/service/voice_export.rs
+src/business/voice_export.rs
+src/daemon/tasks/voice_artifacts.rs
+src/cli/mcp_tasks.rs
+src/cli/web_native.rs
+src/service/web.rs
+src/web/voices.rs
+src/web/artifacts.rs
 '''.splitlines()
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('source_root', type=Path)
     parser.add_argument('--check', action='store_true')
-    parser.add_argument('--publication-commit', help='Explicit immutable Private source baseline; may differ from checkout HEAD.')
+    parser.add_argument('--publication-commit', required=True,
+                        help='Explicit immutable Private source baseline, read directly from Git objects.')
     args = parser.parse_args()
     root = args.source_root.resolve()
     output = Path(__file__).resolve().parents[1] / 'evidence/source-manifest.json'
+    publication = subprocess.check_output(
+        ['git', '-C', str(root), 'rev-parse', '--verify', args.publication_commit+'^{commit}'],
+        text=True).strip()
+    if len(publication) != 40 or any(c not in '0123456789abcdef' for c in publication):
+        raise ValueError('expected full SHA-1 commit')
+    baseline = json.loads((output.parent / 'source-manifest-2026-09-17.json').read_text(encoding='utf-8'))
+    previous = {row['path']: row['git_blob_sha256'] for row in baseline['files']}
     rows = []
-    for name in FILES:
-        p = root / name
-        if p.is_symlink() or not p.resolve().is_relative_to(root):
-            raise ValueError('unsafe source')
-        data = p.read_bytes()
-        rows.append({'path': name, 'sha256': hashlib.sha256(data).hexdigest(), 'bytes': len(data)})
+    for name in sorted(FILES):
+        data = subprocess.check_output(['git', '-C', str(root), 'show', publication+':'+name])
+        digest = hashlib.sha256(data).hexdigest()
+        rows.append({
+            'path': name, 'sha256': digest, 'git_blob_sha256': digest, 'bytes': len(data),
+            'source_link': 'https://github.com/leyan2174/wx-workbench/blob/'+publication+'/'+name,
+            'unchanged_from_previous_git_blob': previous.get(name) == digest,
+            'review_method': ('prior-relevant-reading-plus-unchanged-git-blob'
+                              if previous.get(name) == digest else
+                              'fixed-commit-blob-capture; chapter text defines relevant-symbol review scope'),
+        })
     if args.check:
-        old = {r['path']: r['sha256'] for r in json.loads(output.read_text(encoding='utf-8'))['files']}
-        changed = [r['path'] for r in rows if old.get(r['path']) != r['sha256']]
-        print(json.dumps({'changed': changed}, ensure_ascii=False))
-        raise SystemExit(bool(changed))
-    head = subprocess.check_output(['git','-C',str(root),'rev-parse','HEAD'], text=True).strip()
-    publication = None
-    if args.publication_commit:
-        publication = subprocess.check_output(['git','-C',str(root),'rev-parse','--verify',args.publication_commit+'^{commit}'], text=True).strip()
-    comparison_commit = publication or head
-    baseline = json.loads((output.parent / 'source-manifest-2026-09-16.json').read_text(encoding='utf-8'))
-    previous = {row['path']: row['sha256'] for row in baseline['files']}
-    for row in rows:
-        committed = subprocess.check_output(['git','-C',str(root),'show',comparison_commit+':'+row['path']])
-        current = (root / row['path']).read_bytes()
-        row['git_blob_sha256'] = hashlib.sha256(committed).hexdigest()
-        row['byte_exact_commit_match'] = row['git_blob_sha256'] == row['sha256']
-        row['matches_observed_commit'] = committed.replace(b'\r\n', b'\n') == current.replace(b'\r\n', b'\n')
-        if publication:
-            if not row['matches_observed_commit']:
-                raise ValueError('source differs from mapped commit: '+row['path'])
-            row['source_link'] = 'https://github.com/leyan2174/wx-workbench/blob/'+publication+'/'+row['path']
-        row['review_method'] = ('prior-relevant-sections-plus-unchanged-hash' if previous.get(row['path']) == row['sha256'] else 'current-relevant-sections-or-diff')
-    manifest = {'schema': 2, 'captured_at_utc': datetime.now(timezone.utc).isoformat(),
+        old_manifest = json.loads(output.read_text(encoding='utf-8'))
+        old = {r['path']: r for r in old_manifest['files']}
+        new = {r['path']: r for r in rows}
+        changed = sorted(name for name in old.keys() | new.keys() if old.get(name) != new.get(name))
+        commit_match = old_manifest['publication_candidate_commit'] == publication
+        print(json.dumps({'changed': changed, 'commit_match': commit_match}, ensure_ascii=False))
+        raise SystemExit(bool(changed) or not commit_match)
+    manifest = {'schema': 3, 'captured_at_utc': datetime.now(timezone.utc).isoformat(),
                 'source_repository': 'https://github.com/leyan2174/wx-workbench',
-                'observed_head': comparison_commit, 'checkout_head_at_capture': head,
-                'status': 'private-source-mapped' if publication else 'reviewed-subset-not-publication-freeze',
+                'observed_head': publication,
+                'status': 'private-fixed-commit-candidate',
                 'publication_candidate_commit': publication,
                 'visibility_target': 'private',
                 'source_links_verified_remotely': False,
-                'commit_comparison': 'Text comparison normalizes CRLF to LF; raw working-tree and Git blob hashes are both retained.',
-                'historical_manifest': 'source-manifest-2026-09-16.json',
-                'review_scope': 'Relevant symbols and diffs, or previous reading with unchanged hashes; not a full audit or production test run.', 'files': rows}
-    output.write_text(json.dumps(manifest, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
+                'source_mode': 'git-objects-only; working tree and checkout HEAD excluded',
+                'commit_comparison': 'SHA-256 and byte counts are exact Git blob bytes; no newline normalization.',
+                'historical_manifests': ['source-manifest-2026-09-16.json', 'source-manifest-2026-09-17.json'],
+                'previous_source_commit': baseline['publication_candidate_commit'],
+                'review_scope': 'Selected immutable blobs; relevant CLI, plan, artifact, process, raw-voice selection and group registration, Web/MCP authorization, and initialization symbols reviewed. Hash capture alone is not a full file audit or production test run.',
+                'files': rows}
+    output.write_text(json.dumps(manifest, ensure_ascii=False, indent=2)+'\n', encoding='utf-8', newline='\n')
     print(json.dumps({'files': len(rows), 'status': manifest['status']}))

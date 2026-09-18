@@ -1,426 +1,623 @@
 {
-  "schema": 2,
-  "captured_at_utc": "2026-09-17T04:27:43.042321+00:00",
+  "schema": 3,
+  "captured_at_utc": "2026-09-18T05:53:41.057364+00:00",
   "source_repository": "https://github.com/leyan2174/wx-workbench",
-  "observed_head": "b9fcd4c9a5de5f3290502235af36bc4a404bf1f9",
-  "checkout_head_at_capture": "b9fcd4c9a5de5f3290502235af36bc4a404bf1f9",
-  "status": "private-source-mapped",
-  "publication_candidate_commit": "b9fcd4c9a5de5f3290502235af36bc4a404bf1f9",
+  "observed_head": "ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3",
+  "status": "private-fixed-commit-candidate",
+  "publication_candidate_commit": "ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3",
   "visibility_target": "private",
   "source_links_verified_remotely": false,
-  "commit_comparison": "Text comparison normalizes CRLF to LF; raw working-tree and Git blob hashes are both retained.",
-  "historical_manifest": "source-manifest-2026-09-16.json",
-  "review_scope": "Relevant symbols and diffs, or previous reading with unchanged hashes; not a full audit or production test run.",
+  "source_mode": "git-objects-only; working tree and checkout HEAD excluded",
+  "commit_comparison": "SHA-256 and byte counts are exact Git blob bytes; no newline normalization.",
+  "historical_manifests": [
+    "source-manifest-2026-09-16.json",
+    "source-manifest-2026-09-17.json"
+  ],
+  "previous_source_commit": "b9fcd4c9a5de5f3290502235af36bc4a404bf1f9",
+  "review_scope": "Selected immutable blobs; relevant CLI, plan, artifact, process, raw-voice selection and group registration, Web/MCP authorization, and initialization symbols reviewed. Hash capture alone is not a full file audit or production test run.",
   "files": [
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "sha256": "b2de7296e37b767bdd8e839c0d6cc03b941fc4de53762689d74764dccfc913d4",
-      "bytes": 5595,
-      "git_blob_sha256": "a542a097a2e56cd12dbc937fc470d7409ed3df41acfd21431f610fdea8056cd4",
-      "byte_exact_commit_match": false,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/THIRD_PARTY_NOTICES.md",
-      "review_method": "current-relevant-sections-or-diff"
+      "sha256": "3c17b6e654a7a79ab11abab1775d74c28722df5f452c5c9b1b00f4780b5c8bfe",
+      "git_blob_sha256": "3c17b6e654a7a79ab11abab1775d74c28722df5f452c5c9b1b00f4780b5c8bfe",
+      "bytes": 4949,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/THIRD_PARTY_NOTICES.md",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     },
     {
-      "path": "src/config.rs",
-      "sha256": "4be65cba79b2ecc87aef61f3a579ff12c7a3e3f45aaf2a8cf0bbc35f34489b90",
-      "bytes": 14890,
-      "git_blob_sha256": "4be65cba79b2ecc87aef61f3a579ff12c7a3e3f45aaf2a8cf0bbc35f34489b90",
-      "byte_exact_commit_match": true,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/config.rs",
-      "review_method": "prior-relevant-sections-plus-unchanged-hash"
-    },
-    {
-      "path": "src/crypto/mod.rs",
-      "sha256": "24dc87e587bd608cfb77f60e52355ca6ac9a9f31354446da9a05d05dd15f923a",
-      "bytes": 8825,
-      "git_blob_sha256": "806753df0c8361787a554eb86f0e4441a0a1a3bcd5c177c6f1bc3b0a38a83fcd",
-      "byte_exact_commit_match": false,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/crypto/mod.rs",
-      "review_method": "prior-relevant-sections-plus-unchanged-hash"
-    },
-    {
-      "path": "src/crypto/auth.rs",
-      "sha256": "6e0c724d5806a22114e736e6089fdc63b3668beb31313d168690994a33e7c4ba",
-      "bytes": 1539,
-      "git_blob_sha256": "db7add6dcbc5454f54eb5843f649025f29c5db6907a941996b278e817549b7c1",
-      "byte_exact_commit_match": false,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/crypto/auth.rs",
-      "review_method": "prior-relevant-sections-plus-unchanged-hash"
-    },
-    {
-      "path": "src/crypto/wal.rs",
-      "sha256": "d1c493e12625a8e5693edf4ce83643b4bbc65e93901341badc0015ae48b22a55",
-      "bytes": 5283,
-      "git_blob_sha256": "e0d82edcff5dae9777f39535c618551ae24fc43e5c61c318dfe7c671b72aed93",
-      "byte_exact_commit_match": false,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/crypto/wal.rs",
-      "review_method": "prior-relevant-sections-plus-unchanged-hash"
-    },
-    {
-      "path": "src/scanner/windows/account.rs",
-      "sha256": "374cd8d7edd9634c969c98aa45277edf89c1a0b76609c0e1ed27216e1c390120",
-      "bytes": 15030,
-      "git_blob_sha256": "082f64da4e9730c5ad43e3b2ec7bd3dc2d3445afe07268771962c8116f4f8133",
-      "byte_exact_commit_match": false,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/scanner/windows/account.rs",
-      "review_method": "current-relevant-sections-or-diff"
-    },
-    {
-      "path": "src/attachment/decoder/mod.rs",
-      "sha256": "1a51137a23a656a9851a51376a286a764c171648615382663e7b8ddaa9e48acb",
-      "bytes": 7049,
-      "git_blob_sha256": "1a51137a23a656a9851a51376a286a764c171648615382663e7b8ddaa9e48acb",
-      "byte_exact_commit_match": true,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/attachment/decoder/mod.rs",
-      "review_method": "prior-relevant-sections-plus-unchanged-hash"
-    },
-    {
-      "path": "src/attachment/decoder/v2.rs",
-      "sha256": "a1aee2544e10c25dafe308fc7eb48c44816ee69277bddb9b246c1f90c6f64bdb",
-      "bytes": 5576,
-      "git_blob_sha256": "a1aee2544e10c25dafe308fc7eb48c44816ee69277bddb9b246c1f90c6f64bdb",
-      "byte_exact_commit_match": true,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/attachment/decoder/v2.rs",
-      "review_method": "prior-relevant-sections-plus-unchanged-hash"
-    },
-    {
-      "path": "src/attachment/decoder/v1_xor.rs",
-      "sha256": "bc603b8b51a0b7e7ee7c6c1408a8e1b8f212f4ff2552496ef93025e82edd0952",
-      "bytes": 6192,
-      "git_blob_sha256": "eea55ac084eb7b5db756bdc701261649294462bc7295c856abbfc951a34085b4",
-      "byte_exact_commit_match": false,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/attachment/decoder/v1_xor.rs",
-      "review_method": "prior-relevant-sections-plus-unchanged-hash"
+      "path": "docs/task-artifacts.md",
+      "sha256": "61edef43f5f211305412c8fb78c0d8a789a22c481c54413958d93de515e54f1f",
+      "git_blob_sha256": "61edef43f5f211305412c8fb78c0d8a789a22c481c54413958d93de515e54f1f",
+      "bytes": 16858,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/docs/task-artifacts.md",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     },
     {
       "path": "src/adapters/wechat/contacts/mod.rs",
-      "sha256": "5d4015ce0a372007ddbc2e1d40f20cd903e616a99c80f36a16b3d797fc50831d",
-      "bytes": 15991,
-      "git_blob_sha256": "1a467cdf5e9d285c660a0480b9358da8be3cb3df9c22c2f37a7413592f45fef6",
-      "byte_exact_commit_match": false,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/adapters/wechat/contacts/mod.rs",
-      "review_method": "prior-relevant-sections-plus-unchanged-hash"
-    },
-    {
-      "path": "src/adapters/wechat/messages/sessions.rs",
-      "sha256": "8caa99c0635054cd24dbb1565c90a830b4fa2224205e499be60d4fd4f90c7338",
-      "bytes": 5903,
-      "git_blob_sha256": "3b322f2532e7b632c8b6bd38604b41dea7830d458319db92b2e2028202c7a46a",
-      "byte_exact_commit_match": false,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/adapters/wechat/messages/sessions.rs",
-      "review_method": "prior-relevant-sections-plus-unchanged-hash"
-    },
-    {
-      "path": "src/adapters/wechat/messages/read/mod.rs",
-      "sha256": "c3d52d6f2f85e49c809ef7eb339b620388829e3ed8ac5483aa15b50bf4b2fd11",
-      "bytes": 32260,
-      "git_blob_sha256": "9008064ce6f2c43d1b9e654d1c7a0cf46ab5a2c31148e81771dd5bd9756020bd",
-      "byte_exact_commit_match": false,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/adapters/wechat/messages/read/mod.rs",
-      "review_method": "prior-relevant-sections-plus-unchanged-hash"
-    },
-    {
-      "path": "src/adapters/wechat/messages/summary.rs",
-      "sha256": "d787926e9c170dbf9996e78035036645b25bcb4ed7a099b0f350746795241a98",
-      "bytes": 5414,
-      "git_blob_sha256": "58466418de1ecbb7975efdbfbb3064e25cd09f282a85d8e43ff82827a34aab2c",
-      "byte_exact_commit_match": false,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/adapters/wechat/messages/summary.rs",
-      "review_method": "prior-relevant-sections-plus-unchanged-hash"
-    },
-    {
-      "path": "src/adapters/wechat/messages/export_content.rs",
-      "sha256": "7c896b4044f5aed54bc8c4b38c1318e326f9d1bc55c0c3ce836f21e39cb243c0",
-      "bytes": 24048,
-      "git_blob_sha256": "b28ef9ed8e52008bb43d6274b87007a0d89e9b163e8cc09dc381c8b116673405",
-      "byte_exact_commit_match": false,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/adapters/wechat/messages/export_content.rs",
-      "review_method": "prior-relevant-sections-plus-unchanged-hash"
-    },
-    {
-      "path": "src/adapters/wechat/media/resource.rs",
-      "sha256": "3679bd3452893b334b320fd72abc43f990eaeea715a008e9d72721dae146d81a",
-      "bytes": 8757,
-      "git_blob_sha256": "093d82e47a62f03bed73f9de4d5aedb99833e7afabd631f5ea04c6d422df54ed",
-      "byte_exact_commit_match": false,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/adapters/wechat/media/resource.rs",
-      "review_method": "prior-relevant-sections-plus-unchanged-hash"
-    },
-    {
-      "path": "src/adapters/wechat/media/strict_image.rs",
-      "sha256": "f73d3afe6653c18aa181bb19a64ffd16277f7c39729f336beec6a0c94db08b33",
-      "bytes": 7607,
-      "git_blob_sha256": "84ef9f5a3dd5a6f49ea80b66f4d24a5f702d1f4f063fe2e373a1ebf955ce8224",
-      "byte_exact_commit_match": false,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/adapters/wechat/media/strict_image.rs",
-      "review_method": "prior-relevant-sections-plus-unchanged-hash"
-    },
-    {
-      "path": "src/adapters/wechat/media/legacy_dat.rs",
-      "sha256": "da9524ec733efb1dabc4672c10cf917f914cb8af0d231b746469f5aa56a5c2f6",
-      "bytes": 5896,
-      "git_blob_sha256": "8fd4feb535adfcc062325838f746f75b658ba811e9664aae695cbd0b8dd357e4",
-      "byte_exact_commit_match": false,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/adapters/wechat/media/legacy_dat.rs",
-      "review_method": "prior-relevant-sections-plus-unchanged-hash"
-    },
-    {
-      "path": "src/adapters/wechat/media/directory_layout.rs",
-      "sha256": "3e3a64eeec8efadb54d205fa2193b09d98bf235613e12f502b9eb0b4dbd7bd6a",
-      "bytes": 3918,
-      "git_blob_sha256": "bc41c3a329705ef9f96197a3f15f976911ba9f2c7fa651811fe22329b7c88b85",
-      "byte_exact_commit_match": false,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/adapters/wechat/media/directory_layout.rs",
-      "review_method": "prior-relevant-sections-plus-unchanged-hash"
-    },
-    {
-      "path": "src/adapters/wechat/media/voice.rs",
-      "sha256": "723b0cb91329feb1863eff29ccf7b16c21d7b312ecccc3fcf379f73f3ac1cc76",
-      "bytes": 38998,
-      "git_blob_sha256": "909e642aaa40e53f117d4da7b9242d8d3ce25b7dec5c504f777d45add01ba395",
-      "byte_exact_commit_match": false,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/adapters/wechat/media/voice.rs",
-      "review_method": "current-relevant-sections-or-diff"
-    },
-    {
-      "path": "src/adapters/wechat/media/sns_keystream.rs",
-      "sha256": "ac108b62daa3c4025f9288b607f1f15512d919cae79ef134c9e4572c580db337",
-      "bytes": 15080,
-      "git_blob_sha256": "ac108b62daa3c4025f9288b607f1f15512d919cae79ef134c9e4572c580db337",
-      "byte_exact_commit_match": true,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/adapters/wechat/media/sns_keystream.rs",
-      "review_method": "prior-relevant-sections-plus-unchanged-hash"
-    },
-    {
-      "path": "src/adapters/wechat/media/SNS_KEYSTREAM.md",
-      "sha256": "7b33cf7fc646a71121a7e432dada770fc21025212c993e411c767108b1a9cf13",
-      "bytes": 7834,
-      "git_blob_sha256": "b2f2b9a80eb0164adb0beb5ed69bc1fa4c4f855a9a7d3f1db5388a43eec41aaa",
-      "byte_exact_commit_match": false,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/adapters/wechat/media/SNS_KEYSTREAM.md",
-      "review_method": "prior-relevant-sections-plus-unchanged-hash"
+      "sha256": "967f19dd78589254d44d974c9fb730fbb83a12c142ff9cd7f947724e2a0221fe",
+      "git_blob_sha256": "967f19dd78589254d44d974c9fb730fbb83a12c142ff9cd7f947724e2a0221fe",
+      "bytes": 15542,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/adapters/wechat/contacts/mod.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     },
     {
       "path": "src/adapters/wechat/emoticons/remote_format.rs",
       "sha256": "ef15d849510f8797c5fa7818e397d4f9bc47b0b3b2546dbfbf751a38e21b93a0",
-      "bytes": 2709,
       "git_blob_sha256": "ef15d849510f8797c5fa7818e397d4f9bc47b0b3b2546dbfbf751a38e21b93a0",
-      "byte_exact_commit_match": true,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/adapters/wechat/emoticons/remote_format.rs",
-      "review_method": "prior-relevant-sections-plus-unchanged-hash"
+      "bytes": 2709,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/adapters/wechat/emoticons/remote_format.rs",
+      "unchanged_from_previous_git_blob": true,
+      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
     {
-      "path": "src/adapters/wechat/moments.rs",
-      "sha256": "567ecffd76c1554a0d7c9c26210dae5fa9c62b5d902e98f4a7be670207ce5ac4",
-      "bytes": 32441,
-      "git_blob_sha256": "567ecffd76c1554a0d7c9c26210dae5fa9c62b5d902e98f4a7be670207ce5ac4",
-      "byte_exact_commit_match": true,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/adapters/wechat/moments.rs",
-      "review_method": "current-relevant-sections-or-diff"
-    },
-    {
-      "path": "src/adapters/wechat/moments/legacy.rs",
-      "sha256": "babe13d70830aebc44281e15831887b2ffc0042b72cba951492509a324d6934d",
-      "bytes": 7644,
-      "git_blob_sha256": "5342f3da569139c5fe91b03a2dbace73f586bb951c9cdb9e3f2487f5e81ae2ed",
-      "byte_exact_commit_match": false,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/adapters/wechat/moments/legacy.rs",
-      "review_method": "prior-relevant-sections-plus-unchanged-hash"
-    },
-    {
-      "path": "src/adapters/wechat/moments/decode.rs",
-      "sha256": "5f12a2e4270f3fe293e2e0e658c6768a7b3618119ce091987652cb11903ae47b",
-      "bytes": 7911,
-      "git_blob_sha256": "5f12a2e4270f3fe293e2e0e658c6768a7b3618119ce091987652cb11903ae47b",
-      "byte_exact_commit_match": true,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/adapters/wechat/moments/decode.rs",
-      "review_method": "prior-relevant-sections-plus-unchanged-hash"
-    },
-    {
-      "path": "src/adapters/wechat/moments/query_xml.rs",
-      "sha256": "e2b28311bd236d66a4dac574e019849ec5cb0b1f833a6834bc2954a3687be519",
-      "bytes": 9218,
-      "git_blob_sha256": "8410e769f384875de8c1192daa3ad22ed0ed45b3cad7afa10681dc36e1916d6f",
-      "byte_exact_commit_match": false,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/adapters/wechat/moments/query_xml.rs",
-      "review_method": "prior-relevant-sections-plus-unchanged-hash"
-    },
-    {
-      "path": "src/infrastructure/audio/mod.rs",
-      "sha256": "4c09dcd7481255797e936fd3347160b04239a807cd2524478f4e0b0a93a0321e",
-      "bytes": 10521,
-      "git_blob_sha256": "4c09dcd7481255797e936fd3347160b04239a807cd2524478f4e0b0a93a0321e",
-      "byte_exact_commit_match": true,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/infrastructure/audio/mod.rs",
-      "review_method": "current-relevant-sections-or-diff"
-    },
-    {
-      "path": "src/application/database_decryption.rs",
-      "sha256": "a9a8c8b0966ed2f3424e9ac450ef1e38cadd276d45772f2c82cb70a48208e20d",
-      "bytes": 6450,
-      "git_blob_sha256": "cd942893256ee410c5d9958745e0dc9dfb5a060a43178bd8228f9ff19e7b2e79",
-      "byte_exact_commit_match": false,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/application/database_decryption.rs",
-      "review_method": "current-relevant-sections-or-diff"
-    },
-    {
-      "path": "src/application/emoticons/download.rs",
-      "sha256": "49ddf8bd2716a7b45cb7511b07c3c87eb14ad1433fd4dc55607256e6584274c6",
-      "bytes": 10222,
-      "git_blob_sha256": "49ddf8bd2716a7b45cb7511b07c3c87eb14ad1433fd4dc55607256e6584274c6",
-      "byte_exact_commit_match": true,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/application/emoticons/download.rs",
-      "review_method": "current-relevant-sections-or-diff"
-    },
-    {
-      "path": "src/application/moments/album_images.rs",
-      "sha256": "7339abb8fc51514d0ebd6f819a1178d08bf6cb86dc68a12d7ad001b02b6ee0b3",
-      "bytes": 13370,
-      "git_blob_sha256": "26b72b21f5e744f404b6c63e46777fe538e6ca8432ea285247c8cb8147656a4b",
-      "byte_exact_commit_match": false,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/application/moments/album_images.rs",
-      "review_method": "current-relevant-sections-or-diff"
-    },
-    {
-      "path": "src/application/moments/export.rs",
-      "sha256": "1af60b06a32e24863b3d98d10bd054247b046f60bf0a8647762c5827d275d719",
-      "bytes": 32468,
-      "git_blob_sha256": "1516193baf3f662b49eb79955328728094af4f105db082c9dc37b1b42a716f99",
-      "byte_exact_commit_match": false,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/application/moments/export.rs",
-      "review_method": "current-relevant-sections-or-diff"
-    },
-    {
-      "path": "src/application/mod.rs",
-      "sha256": "c645161d8d159349bde88d8e6a360218d0e2366ac2d42214626073a90e2189f5",
-      "bytes": 562,
-      "git_blob_sha256": "c645161d8d159349bde88d8e6a360218d0e2366ac2d42214626073a90e2189f5",
-      "byte_exact_commit_match": true,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/application/mod.rs",
-      "review_method": "current-relevant-sections-or-diff"
-    },
-    {
-      "path": "src/infrastructure/mod.rs",
-      "sha256": "44593ce4ddf74dd8992d5acf228ae24dc7fa333d38f54bcc95326be8c8f60cb5",
-      "bytes": 231,
-      "git_blob_sha256": "44593ce4ddf74dd8992d5acf228ae24dc7fa333d38f54bcc95326be8c8f60cb5",
-      "byte_exact_commit_match": true,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/infrastructure/mod.rs",
-      "review_method": "current-relevant-sections-or-diff"
-    },
-    {
-      "path": "src/scanner/mod.rs",
-      "sha256": "57821b262a7b25a5ef570f22e41fc7125680924170bda575853949a587b358cc",
-      "bytes": 11958,
-      "git_blob_sha256": "2fbfe12f59198c649eb1239871c0151e791a476852a4d2f55efbd03b4a618d14",
-      "byte_exact_commit_match": false,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/scanner/mod.rs",
-      "review_method": "current-relevant-sections-or-diff"
-    },
-    {
-      "path": "src/cli/mod.rs",
-      "sha256": "f9d20f588317368d3cf91001d12ffaa5f5fd4a3648543ac3036837a10e5463c1",
-      "bytes": 25522,
-      "git_blob_sha256": "f9d20f588317368d3cf91001d12ffaa5f5fd4a3648543ac3036837a10e5463c1",
-      "byte_exact_commit_match": true,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/cli/mod.rs",
-      "review_method": "current-relevant-sections-or-diff"
-    },
-    {
-      "path": "src/daemon/operations/init.rs",
-      "sha256": "0e82d7c129dcc19484938344d46e2560d9ed91a122b58ec028135d7c6f97a9a0",
-      "bytes": 8835,
-      "git_blob_sha256": "0e82d7c129dcc19484938344d46e2560d9ed91a122b58ec028135d7c6f97a9a0",
-      "byte_exact_commit_match": true,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/daemon/operations/init.rs",
-      "review_method": "current-relevant-sections-or-diff"
-    },
-    {
-      "path": "src/daemon/worker_keys.rs",
-      "sha256": "6881a8eeab0b8929d1d67b059fa8f27cb7b220ff97e9e2b7314915a586bd35d2",
-      "bytes": 21267,
-      "git_blob_sha256": "6881a8eeab0b8929d1d67b059fa8f27cb7b220ff97e9e2b7314915a586bd35d2",
-      "byte_exact_commit_match": true,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/daemon/worker_keys.rs",
-      "review_method": "current-relevant-sections-or-diff"
-    },
-    {
-      "path": "src/daemon/operation_worker.rs",
-      "sha256": "3ed26f2782c2354f44214a1f2469935947e364809b8fa3452363cc75c014753f",
-      "bytes": 3700,
-      "git_blob_sha256": "a7f49f4c9d27f4a825767571f0d69c149864a0f8e553873e778fda9f51da46c4",
-      "byte_exact_commit_match": false,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/daemon/operation_worker.rs",
-      "review_method": "current-relevant-sections-or-diff"
-    },
-    {
-      "path": "src/service/worker_keys.rs",
-      "sha256": "bda381dc22b9dcd05e947d4b6b6a000e49a8bd377f5bed4f1354c00b52945134",
-      "bytes": 45363,
-      "git_blob_sha256": "bda381dc22b9dcd05e947d4b6b6a000e49a8bd377f5bed4f1354c00b52945134",
-      "byte_exact_commit_match": true,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/service/worker_keys.rs",
-      "review_method": "current-relevant-sections-or-diff"
-    },
-    {
-      "path": "src/service/operation_requests/key_provider.rs",
-      "sha256": "34a5210663cb0cb9e438378f3b6776fb28ffc6624821b6b319995e5ca766bdf2",
-      "bytes": 107,
-      "git_blob_sha256": "8f376755a05286b3fd8a442593e43605f0d9b5753ae25dd7043f0abd24edca0e",
-      "byte_exact_commit_match": false,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/service/operation_requests/key_provider.rs",
-      "review_method": "current-relevant-sections-or-diff"
+      "path": "src/adapters/wechat/media/SNS_KEYSTREAM.md",
+      "sha256": "ad54b8ad9db2adaf167a0fe9efa1b522d6f11e6ca489f6c4011f7ea3037698d1",
+      "git_blob_sha256": "ad54b8ad9db2adaf167a0fe9efa1b522d6f11e6ca489f6c4011f7ea3037698d1",
+      "bytes": 7714,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/adapters/wechat/media/SNS_KEYSTREAM.md",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     },
     {
       "path": "src/adapters/wechat/media/assets/README.md",
       "sha256": "a20ba56ee0351a55a6275290812600314eadc261dcdcfa049004cdea0770a7a2",
-      "bytes": 1058,
       "git_blob_sha256": "a20ba56ee0351a55a6275290812600314eadc261dcdcfa049004cdea0770a7a2",
-      "byte_exact_commit_match": true,
-      "matches_observed_commit": true,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b9fcd4c9a5de5f3290502235af36bc4a404bf1f9/src/adapters/wechat/media/assets/README.md",
-      "review_method": "current-relevant-sections-or-diff"
+      "bytes": 1058,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/adapters/wechat/media/assets/README.md",
+      "unchanged_from_previous_git_blob": true,
+      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+    },
+    {
+      "path": "src/adapters/wechat/media/directory_layout.rs",
+      "sha256": "ea8b44d9cd30da19eb1c94cb3c1c255cac26821d331298a8238c7eeaaac6e3c0",
+      "git_blob_sha256": "ea8b44d9cd30da19eb1c94cb3c1c255cac26821d331298a8238c7eeaaac6e3c0",
+      "bytes": 3802,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/adapters/wechat/media/directory_layout.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/adapters/wechat/media/legacy_dat.rs",
+      "sha256": "cc57b62edb2b84817af5f215eae2fde9622361695ffa21d697416525f7089403",
+      "git_blob_sha256": "cc57b62edb2b84817af5f215eae2fde9622361695ffa21d697416525f7089403",
+      "bytes": 5707,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/adapters/wechat/media/legacy_dat.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/adapters/wechat/media/resource.rs",
+      "sha256": "093d82e47a62f03bed73f9de4d5aedb99833e7afabd631f5ea04c6d422df54ed",
+      "git_blob_sha256": "093d82e47a62f03bed73f9de4d5aedb99833e7afabd631f5ea04c6d422df54ed",
+      "bytes": 8518,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/adapters/wechat/media/resource.rs",
+      "unchanged_from_previous_git_blob": true,
+      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+    },
+    {
+      "path": "src/adapters/wechat/media/sns_keystream.rs",
+      "sha256": "ac108b62daa3c4025f9288b607f1f15512d919cae79ef134c9e4572c580db337",
+      "git_blob_sha256": "ac108b62daa3c4025f9288b607f1f15512d919cae79ef134c9e4572c580db337",
+      "bytes": 15080,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/adapters/wechat/media/sns_keystream.rs",
+      "unchanged_from_previous_git_blob": true,
+      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+    },
+    {
+      "path": "src/adapters/wechat/media/strict_image.rs",
+      "sha256": "84ef9f5a3dd5a6f49ea80b66f4d24a5f702d1f4f063fe2e373a1ebf955ce8224",
+      "git_blob_sha256": "84ef9f5a3dd5a6f49ea80b66f4d24a5f702d1f4f063fe2e373a1ebf955ce8224",
+      "bytes": 7378,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/adapters/wechat/media/strict_image.rs",
+      "unchanged_from_previous_git_blob": true,
+      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+    },
+    {
+      "path": "src/adapters/wechat/media/voice.rs",
+      "sha256": "34a5285af2aa941fa342f4ab7461a97aec957f72c0aa513b9dafc9481c5479ef",
+      "git_blob_sha256": "34a5285af2aa941fa342f4ab7461a97aec957f72c0aa513b9dafc9481c5479ef",
+      "bytes": 39122,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/adapters/wechat/media/voice.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/adapters/wechat/media/voice_export.rs",
+      "sha256": "fff6fa637e88ec7bb052da2fad4f0ae147e411d8e882578305fb7add4b3cf380",
+      "git_blob_sha256": "fff6fa637e88ec7bb052da2fad4f0ae147e411d8e882578305fb7add4b3cf380",
+      "bytes": 16735,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/adapters/wechat/media/voice_export.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/adapters/wechat/messages/export_content.rs",
+      "sha256": "94c12b0aa7d8e949d601217488b94c5bfb6fd3b69314c1cc235347c905da9a28",
+      "git_blob_sha256": "94c12b0aa7d8e949d601217488b94c5bfb6fd3b69314c1cc235347c905da9a28",
+      "bytes": 23370,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/adapters/wechat/messages/export_content.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/adapters/wechat/messages/read/mod.rs",
+      "sha256": "cd2c7a2dcafaf0e1a9677d4c255d8d74451cd3b2c374c99116e9cedc54b92070",
+      "git_blob_sha256": "cd2c7a2dcafaf0e1a9677d4c255d8d74451cd3b2c374c99116e9cedc54b92070",
+      "bytes": 31383,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/adapters/wechat/messages/read/mod.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/adapters/wechat/messages/sessions.rs",
+      "sha256": "75f0b608e4c802e6a7b77dbcba41efc6b47b7a58faa93686090f492c1d8b539f",
+      "git_blob_sha256": "75f0b608e4c802e6a7b77dbcba41efc6b47b7a58faa93686090f492c1d8b539f",
+      "bytes": 5761,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/adapters/wechat/messages/sessions.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/adapters/wechat/messages/summary.rs",
+      "sha256": "86ffb3a0b46cfa134680eafa89f1a3a7be49e9ba1cc2193abae282918b984648",
+      "git_blob_sha256": "86ffb3a0b46cfa134680eafa89f1a3a7be49e9ba1cc2193abae282918b984648",
+      "bytes": 5251,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/adapters/wechat/messages/summary.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/adapters/wechat/moments.rs",
+      "sha256": "567ecffd76c1554a0d7c9c26210dae5fa9c62b5d902e98f4a7be670207ce5ac4",
+      "git_blob_sha256": "567ecffd76c1554a0d7c9c26210dae5fa9c62b5d902e98f4a7be670207ce5ac4",
+      "bytes": 32441,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/adapters/wechat/moments.rs",
+      "unchanged_from_previous_git_blob": true,
+      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+    },
+    {
+      "path": "src/adapters/wechat/moments/decode.rs",
+      "sha256": "5f12a2e4270f3fe293e2e0e658c6768a7b3618119ce091987652cb11903ae47b",
+      "git_blob_sha256": "5f12a2e4270f3fe293e2e0e658c6768a7b3618119ce091987652cb11903ae47b",
+      "bytes": 7911,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/adapters/wechat/moments/decode.rs",
+      "unchanged_from_previous_git_blob": true,
+      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+    },
+    {
+      "path": "src/adapters/wechat/moments/legacy.rs",
+      "sha256": "5342f3da569139c5fe91b03a2dbace73f586bb951c9cdb9e3f2487f5e81ae2ed",
+      "git_blob_sha256": "5342f3da569139c5fe91b03a2dbace73f586bb951c9cdb9e3f2487f5e81ae2ed",
+      "bytes": 7417,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/adapters/wechat/moments/legacy.rs",
+      "unchanged_from_previous_git_blob": true,
+      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+    },
+    {
+      "path": "src/adapters/wechat/moments/query_xml.rs",
+      "sha256": "3e52b0b14705ced6ebbb51e3b460f908991f796907b89cd0ae7681141416c501",
+      "git_blob_sha256": "3e52b0b14705ced6ebbb51e3b460f908991f796907b89cd0ae7681141416c501",
+      "bytes": 8997,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/adapters/wechat/moments/query_xml.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/application/database_decryption.rs",
+      "sha256": "d6d3da95f5c3792841d495413951abf6ef25e3da8f4115b2aa19d7810a5e043a",
+      "git_blob_sha256": "d6d3da95f5c3792841d495413951abf6ef25e3da8f4115b2aa19d7810a5e043a",
+      "bytes": 6323,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/application/database_decryption.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/application/emoticons/download.rs",
+      "sha256": "48cdc839857a66cfe786fb5238ff218732e58251169e3f71ef55c44a21d8bc57",
+      "git_blob_sha256": "48cdc839857a66cfe786fb5238ff218732e58251169e3f71ef55c44a21d8bc57",
+      "bytes": 10228,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/application/emoticons/download.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/application/mod.rs",
+      "sha256": "de9b361342a539c1241d7fccef910d39e02774e91eba3dc1d4ffaaf78af4b493",
+      "git_blob_sha256": "de9b361342a539c1241d7fccef910d39e02774e91eba3dc1d4ffaaf78af4b493",
+      "bytes": 497,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/application/mod.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/application/moments/album_images.rs",
+      "sha256": "d29864bc0e50f355a026099b247603fc40cc8062feb6e8df8fc3c3ff80a110c4",
+      "git_blob_sha256": "d29864bc0e50f355a026099b247603fc40cc8062feb6e8df8fc3c3ff80a110c4",
+      "bytes": 12955,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/application/moments/album_images.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/application/moments/export.rs",
+      "sha256": "1516193baf3f662b49eb79955328728094af4f105db082c9dc37b1b42a716f99",
+      "git_blob_sha256": "1516193baf3f662b49eb79955328728094af4f105db082c9dc37b1b42a716f99",
+      "bytes": 31788,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/application/moments/export.rs",
+      "unchanged_from_previous_git_blob": true,
+      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+    },
+    {
+      "path": "src/attachment/decoder/mod.rs",
+      "sha256": "1a51137a23a656a9851a51376a286a764c171648615382663e7b8ddaa9e48acb",
+      "git_blob_sha256": "1a51137a23a656a9851a51376a286a764c171648615382663e7b8ddaa9e48acb",
+      "bytes": 7049,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/attachment/decoder/mod.rs",
+      "unchanged_from_previous_git_blob": true,
+      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+    },
+    {
+      "path": "src/attachment/decoder/v1_xor.rs",
+      "sha256": "eea55ac084eb7b5db756bdc701261649294462bc7295c856abbfc951a34085b4",
+      "git_blob_sha256": "eea55ac084eb7b5db756bdc701261649294462bc7295c856abbfc951a34085b4",
+      "bytes": 6023,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/attachment/decoder/v1_xor.rs",
+      "unchanged_from_previous_git_blob": true,
+      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+    },
+    {
+      "path": "src/attachment/decoder/v2.rs",
+      "sha256": "a1aee2544e10c25dafe308fc7eb48c44816ee69277bddb9b246c1f90c6f64bdb",
+      "git_blob_sha256": "a1aee2544e10c25dafe308fc7eb48c44816ee69277bddb9b246c1f90c6f64bdb",
+      "bytes": 5576,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/attachment/decoder/v2.rs",
+      "unchanged_from_previous_git_blob": true,
+      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+    },
+    {
+      "path": "src/business/VOICE_EXPORT.md",
+      "sha256": "6cb004e7996d5c615922a503ced0a6f82e27656b80aad3811b2943eef8077e36",
+      "git_blob_sha256": "6cb004e7996d5c615922a503ced0a6f82e27656b80aad3811b2943eef8077e36",
+      "bytes": 9833,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/business/VOICE_EXPORT.md",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/business/voice_export.rs",
+      "sha256": "8b8240d7de51b37514b11b17637f4c5e7fcc90dceee20ff80a402aa825454afd",
+      "git_blob_sha256": "8b8240d7de51b37514b11b17637f4c5e7fcc90dceee20ff80a402aa825454afd",
+      "bytes": 5792,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/business/voice_export.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/cli/chats.rs",
+      "sha256": "7ef592294576259d3a1029cc540cf5cdee5d415892201ef64783846ccb2951a2",
+      "git_blob_sha256": "7ef592294576259d3a1029cc540cf5cdee5d415892201ef64783846ccb2951a2",
+      "bytes": 1183,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/cli/chats.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/cli/mcp_tasks.rs",
+      "sha256": "9df4cc7102f42899a21ef0dc5d22350d677ca74fa7c43d4b008eb657d35232c2",
+      "git_blob_sha256": "9df4cc7102f42899a21ef0dc5d22350d677ca74fa7c43d4b008eb657d35232c2",
+      "bytes": 39597,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/cli/mcp_tasks.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/cli/mod.rs",
+      "sha256": "21306b5ea6ad17626d8416167b3092e5e38d98e1a1b6ba5527a7c3908eee9a51",
+      "git_blob_sha256": "21306b5ea6ad17626d8416167b3092e5e38d98e1a1b6ba5527a7c3908eee9a51",
+      "bytes": 28066,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/cli/mod.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/cli/voices.rs",
+      "sha256": "77bba228826534e9cbf203d8874af4ea346ef0068f86dade7f6617b9c0c7d561",
+      "git_blob_sha256": "77bba228826534e9cbf203d8874af4ea346ef0068f86dade7f6617b9c0c7d561",
+      "bytes": 598,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/cli/voices.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/cli/web_native.rs",
+      "sha256": "48a754c602493fffa363900bcf43ee5fe0363f9ffdfb15125c05e5cc4b19bffd",
+      "git_blob_sha256": "48a754c602493fffa363900bcf43ee5fe0363f9ffdfb15125c05e5cc4b19bffd",
+      "bytes": 5485,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/cli/web_native.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/config.rs",
+      "sha256": "4be65cba79b2ecc87aef61f3a579ff12c7a3e3f45aaf2a8cf0bbc35f34489b90",
+      "git_blob_sha256": "4be65cba79b2ecc87aef61f3a579ff12c7a3e3f45aaf2a8cf0bbc35f34489b90",
+      "bytes": 14890,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/config.rs",
+      "unchanged_from_previous_git_blob": true,
+      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+    },
+    {
+      "path": "src/crypto/auth.rs",
+      "sha256": "db7add6dcbc5454f54eb5843f649025f29c5db6907a941996b278e817549b7c1",
+      "git_blob_sha256": "db7add6dcbc5454f54eb5843f649025f29c5db6907a941996b278e817549b7c1",
+      "bytes": 1499,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/crypto/auth.rs",
+      "unchanged_from_previous_git_blob": true,
+      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+    },
+    {
+      "path": "src/crypto/mod.rs",
+      "sha256": "806753df0c8361787a554eb86f0e4441a0a1a3bcd5c177c6f1bc3b0a38a83fcd",
+      "git_blob_sha256": "806753df0c8361787a554eb86f0e4441a0a1a3bcd5c177c6f1bc3b0a38a83fcd",
+      "bytes": 8579,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/crypto/mod.rs",
+      "unchanged_from_previous_git_blob": true,
+      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+    },
+    {
+      "path": "src/crypto/wal.rs",
+      "sha256": "e0d82edcff5dae9777f39535c618551ae24fc43e5c61c318dfe7c671b72aed93",
+      "git_blob_sha256": "e0d82edcff5dae9777f39535c618551ae24fc43e5c61c318dfe7c671b72aed93",
+      "bytes": 5151,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/crypto/wal.rs",
+      "unchanged_from_previous_git_blob": true,
+      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+    },
+    {
+      "path": "src/daemon/operation_worker.rs",
+      "sha256": "30204e997e698cc7c8c58abf888b26465df705202d4d10c7010f003b9bc4dadc",
+      "git_blob_sha256": "30204e997e698cc7c8c58abf888b26465df705202d4d10c7010f003b9bc4dadc",
+      "bytes": 3630,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/daemon/operation_worker.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/daemon/operations/init.rs",
+      "sha256": "0e82d7c129dcc19484938344d46e2560d9ed91a122b58ec028135d7c6f97a9a0",
+      "git_blob_sha256": "0e82d7c129dcc19484938344d46e2560d9ed91a122b58ec028135d7c6f97a9a0",
+      "bytes": 8835,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/daemon/operations/init.rs",
+      "unchanged_from_previous_git_blob": true,
+      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+    },
+    {
+      "path": "src/daemon/operations/plan_tasks.rs",
+      "sha256": "0468901f1536d95a5f2dd82d3b43ad619d0cdeab4e5396b2ed47fd21c9ed78e0",
+      "git_blob_sha256": "0468901f1536d95a5f2dd82d3b43ad619d0cdeab4e5396b2ed47fd21c9ed78e0",
+      "bytes": 7669,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/daemon/operations/plan_tasks.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/daemon/operations/voices.rs",
+      "sha256": "490f01db8a7f588b65f95b62eb78766d9d2dbed69897ee1b66aab4486ea74fa1",
+      "git_blob_sha256": "490f01db8a7f588b65f95b62eb78766d9d2dbed69897ee1b66aab4486ea74fa1",
+      "bytes": 39698,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/daemon/operations/voices.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/daemon/tasks/artifact_file.rs",
+      "sha256": "e6dc977a2d8c7d4b4d58ae8156b922e33c546128bed69c0673aa8d07863ed2e3",
+      "git_blob_sha256": "e6dc977a2d8c7d4b4d58ae8156b922e33c546128bed69c0673aa8d07863ed2e3",
+      "bytes": 10455,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/daemon/tasks/artifact_file.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/daemon/tasks/artifacts.rs",
+      "sha256": "8f6d799b4d5f22a54a73f6a5f55b292e016fcc47c12608f657272af7da4338ab",
+      "git_blob_sha256": "8f6d799b4d5f22a54a73f6a5f55b292e016fcc47c12608f657272af7da4338ab",
+      "bytes": 27813,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/daemon/tasks/artifacts.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/daemon/tasks/plan_artifacts.rs",
+      "sha256": "ba7b855dbed0be82b706f6b534c112e61864b7692a2477c525c4439586124863",
+      "git_blob_sha256": "ba7b855dbed0be82b706f6b534c112e61864b7692a2477c525c4439586124863",
+      "bytes": 23561,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/daemon/tasks/plan_artifacts.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/daemon/tasks/process.rs",
+      "sha256": "525a12d2635152d66a735418dc293f891ff46896dc7c6c3e2b961a80b6ea3dde",
+      "git_blob_sha256": "525a12d2635152d66a735418dc293f891ff46896dc7c6c3e2b961a80b6ea3dde",
+      "bytes": 10023,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/daemon/tasks/process.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/daemon/tasks/voice_artifacts.rs",
+      "sha256": "9ee761bb299c9dc8edc85c71ea5dfa945cbd2475d02cbd49ed60f051e5703b7d",
+      "git_blob_sha256": "9ee761bb299c9dc8edc85c71ea5dfa945cbd2475d02cbd49ed60f051e5703b7d",
+      "bytes": 17914,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/daemon/tasks/voice_artifacts.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/daemon/worker_keys.rs",
+      "sha256": "7279b9f66f16007678bdc54ef397faa75a9ebce23d0a4d71643e1d6ab221efa5",
+      "git_blob_sha256": "7279b9f66f16007678bdc54ef397faa75a9ebce23d0a4d71643e1d6ab221efa5",
+      "bytes": 20939,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/daemon/worker_keys.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/infrastructure/mod.rs",
+      "sha256": "f56607d61b69c80852ec02f0efb520d6ba575f3ce22a25dec778f44904250f2d",
+      "git_blob_sha256": "f56607d61b69c80852ec02f0efb520d6ba575f3ce22a25dec778f44904250f2d",
+      "bytes": 179,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/infrastructure/mod.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/mcp/PROTOCOL.md",
+      "sha256": "b8960bfb910afbde34ec9d5a7d15f0c5a8207e655367068774e88b958c23d92f",
+      "git_blob_sha256": "b8960bfb910afbde34ec9d5a7d15f0c5a8207e655367068774e88b958c23d92f",
+      "bytes": 23156,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/mcp/PROTOCOL.md",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/scanner/mod.rs",
+      "sha256": "2fbfe12f59198c649eb1239871c0151e791a476852a4d2f55efbd03b4a618d14",
+      "git_blob_sha256": "2fbfe12f59198c649eb1239871c0151e791a476852a4d2f55efbd03b4a618d14",
+      "bytes": 11651,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/scanner/mod.rs",
+      "unchanged_from_previous_git_blob": true,
+      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+    },
+    {
+      "path": "src/scanner/windows/account.rs",
+      "sha256": "082f64da4e9730c5ad43e3b2ec7bd3dc2d3445afe07268771962c8116f4f8133",
+      "git_blob_sha256": "082f64da4e9730c5ad43e3b2ec7bd3dc2d3445afe07268771962c8116f4f8133",
+      "bytes": 14673,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/scanner/windows/account.rs",
+      "unchanged_from_previous_git_blob": true,
+      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+    },
+    {
+      "path": "src/service/chat_plan.rs",
+      "sha256": "63dfd0be870e38ab2822622e835ece1ae832509b21e91ceb5ba25643ec4a2830",
+      "git_blob_sha256": "63dfd0be870e38ab2822622e835ece1ae832509b21e91ceb5ba25643ec4a2830",
+      "bytes": 8827,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/service/chat_plan.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/service/operation_requests/key_provider.rs",
+      "sha256": "8f376755a05286b3fd8a442593e43605f0d9b5753ae25dd7043f0abd24edca0e",
+      "git_blob_sha256": "8f376755a05286b3fd8a442593e43605f0d9b5753ae25dd7043f0abd24edca0e",
+      "bytes": 106,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/service/operation_requests/key_provider.rs",
+      "unchanged_from_previous_git_blob": true,
+      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+    },
+    {
+      "path": "src/service/operation_requests/plan.rs",
+      "sha256": "ac0589b9a0baa5327e00ef547391b093a0a5faab0646792b0578a9a2b2bb564b",
+      "git_blob_sha256": "ac0589b9a0baa5327e00ef547391b093a0a5faab0646792b0578a9a2b2bb564b",
+      "bytes": 190,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/service/operation_requests/plan.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/service/plan.rs",
+      "sha256": "cb9299abd9c5cd24b0c4b1658580f32aca3c03f7c55aacd484bfd00d4381cf79",
+      "git_blob_sha256": "cb9299abd9c5cd24b0c4b1658580f32aca3c03f7c55aacd484bfd00d4381cf79",
+      "bytes": 17678,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/service/plan.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/service/task_artifacts.rs",
+      "sha256": "7a86da5ae6e3f44cccaf1e1f2a1a1122b19017d6c8245124062e4ce075adf965",
+      "git_blob_sha256": "7a86da5ae6e3f44cccaf1e1f2a1a1122b19017d6c8245124062e4ce075adf965",
+      "bytes": 8047,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/service/task_artifacts.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/service/voice_export.rs",
+      "sha256": "f52532f6396ff7a43f9f4f458287e0d5e76f21620c9f9ee99d01207ae6190ae8",
+      "git_blob_sha256": "f52532f6396ff7a43f9f4f458287e0d5e76f21620c9f9ee99d01207ae6190ae8",
+      "bytes": 7675,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/service/voice_export.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/service/web.rs",
+      "sha256": "03c00e4872131645328d5300d6562382db26a5999b7919c7ad0a40e2449e8ed4",
+      "git_blob_sha256": "03c00e4872131645328d5300d6562382db26a5999b7919c7ad0a40e2449e8ed4",
+      "bytes": 22153,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/service/web.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/service/worker_keys.rs",
+      "sha256": "bda381dc22b9dcd05e947d4b6b6a000e49a8bd377f5bed4f1354c00b52945134",
+      "git_blob_sha256": "bda381dc22b9dcd05e947d4b6b6a000e49a8bd377f5bed4f1354c00b52945134",
+      "bytes": 45363,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/service/worker_keys.rs",
+      "unchanged_from_previous_git_blob": true,
+      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+    },
+    {
+      "path": "src/web/artifacts.rs",
+      "sha256": "75548629b18b8b8a3541f627e5ceea2d8c245c1a57ce9d232ca6c9608e736008",
+      "git_blob_sha256": "75548629b18b8b8a3541f627e5ceea2d8c245c1a57ce9d232ca6c9608e736008",
+      "bytes": 20221,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/web/artifacts.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/web/voices.rs",
+      "sha256": "bfb8a32a3afaab0ffa244e092a886b6f2d27bd4c914dca5b4bd4d55e6044e4a0",
+      "git_blob_sha256": "bfb8a32a3afaab0ffa244e092a886b6f2d27bd4c914dca5b4bd4d55e6044e4a0",
+      "bytes": 4749,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/web/voices.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/windows_process/README.md",
+      "sha256": "75bb50ff982fde600974aac3bcac379e40154f357155aa01103e89283d5da269",
+      "git_blob_sha256": "75bb50ff982fde600974aac3bcac379e40154f357155aa01103e89283d5da269",
+      "bytes": 3147,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/windows_process/README.md",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/windows_process/managed.rs",
+      "sha256": "7b44c279151ef91e47f61cf10a22580ca70661555e4ababbd99f14633ac7594c",
+      "git_blob_sha256": "7b44c279151ef91e47f61cf10a22580ca70661555e4ababbd99f14633ac7594c",
+      "bytes": 12790,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/windows_process/managed.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
+    },
+    {
+      "path": "src/windows_process/managed/native.rs",
+      "sha256": "55b67e479205a92e1d8637430e3820a3baf887ea30562669c8f8b336867c1216",
+      "git_blob_sha256": "55b67e479205a92e1d8637430e3820a3baf887ea30562669c8f8b336867c1216",
+      "bytes": 10415,
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/ddb9d093c0b8ce7db5ad8b1808adf66e6e2432a3/src/windows_process/managed/native.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     }
   ]
 }
