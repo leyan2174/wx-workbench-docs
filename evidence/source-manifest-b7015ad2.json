@@ -1,10 +1,10 @@
 {
   "schema": 3,
-  "captured_at_utc": "2026-09-23T07:48:11.170084+00:00",
+  "captured_at_utc": "2026-09-23T07:12:57.490257+00:00",
   "source_repository": "https://github.com/leyan2174/wx-workbench",
-  "observed_head": "d99697a4194a5b2c27a6deace8a45c86e90e96fa",
+  "observed_head": "b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e",
   "status": "private-fixed-commit-candidate",
-  "publication_candidate_commit": "d99697a4194a5b2c27a6deace8a45c86e90e96fa",
+  "publication_candidate_commit": "b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e",
   "visibility_target": "private",
   "source_links_verified_remotely": false,
   "source_mode": "git-objects-only; working tree and checkout HEAD excluded",
@@ -12,45 +12,26 @@
   "historical_manifests": [
     "source-manifest-2026-09-16.json",
     "source-manifest-2026-09-17.json",
-    "source-manifest-2026-09-18.json",
-    "source-manifest-b7015ad2.json"
+    "source-manifest-2026-09-18.json"
   ],
-  "previous_source_commit": "b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e",
-  "review_scope": "Bounded tag-target validation delta from b7015ad2; unchanged relevant reading reused. Hash capture alone is not a full file audit or production test run.",
+  "previous_source_commit": "468bcc50aadc4b2f1e4901c1038b19de8b8c2a87",
+  "review_scope": "Bounded delta from 468bcc50: private SQLite snapshots, directory pins, read budgets, article XML fields and Web identity projections; unchanged relevant reading reused. Hash capture alone is not a full file audit or production test run.",
   "files": [
     {
       "path": "README.md",
       "sha256": "b89d5bde1655f2e7efc7feecc654f4928eb9e4fa91b7417ee14e307abbb0d475",
       "git_blob_sha256": "b89d5bde1655f2e7efc7feecc654f4928eb9e4fa91b7417ee14e307abbb0d475",
       "bytes": 18469,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/README.md",
-      "unchanged_from_previous_git_blob": true,
-      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/README.md",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
       "sha256": "981a1ca8317ccefe1639734719f4b12d8af6c3b1a5fc85ccf4e5ad6ab73c7a59",
       "git_blob_sha256": "981a1ca8317ccefe1639734719f4b12d8af6c3b1a5fc85ccf4e5ad6ab73c7a59",
       "bytes": 5142,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/THIRD_PARTY_NOTICES.md",
-      "unchanged_from_previous_git_blob": true,
-      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
-    },
-    {
-      "path": "docs/business-contacts.md",
-      "sha256": "ddf3e691486bd3ffb95c845dccb51fb7074e9af623a2de11f4e5ff6bbf2c0222",
-      "git_blob_sha256": "ddf3e691486bd3ffb95c845dccb51fb7074e9af623a2de11f4e5ff6bbf2c0222",
-      "bytes": 6831,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/docs/business-contacts.md",
-      "unchanged_from_previous_git_blob": false,
-      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
-    },
-    {
-      "path": "docs/query-protocol.md",
-      "sha256": "61d63bc35d9de2314de24e47ca5d8771b4f6bcd9a90a21a2f2531ab57950c68f",
-      "git_blob_sha256": "61d63bc35d9de2314de24e47ca5d8771b4f6bcd9a90a21a2f2531ab57950c68f",
-      "bytes": 10600,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/docs/query-protocol.md",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/THIRD_PARTY_NOTICES.md",
       "unchanged_from_previous_git_blob": false,
       "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     },
@@ -59,25 +40,25 @@
       "sha256": "1ecb7fc69043a58d3984600b441d2f2743aa3a796d94b51da3b2c6287b32713e",
       "git_blob_sha256": "1ecb7fc69043a58d3984600b441d2f2743aa3a796d94b51da3b2c6287b32713e",
       "bytes": 17565,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/docs/task-artifacts.md",
-      "unchanged_from_previous_git_blob": true,
-      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/docs/task-artifacts.md",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     },
     {
       "path": "src/adapters/wechat/articles.rs",
       "sha256": "b14adb28b285d59f9366fb2ba35be5ed868e58db6a1344968e64519068d369a3",
       "git_blob_sha256": "b14adb28b285d59f9366fb2ba35be5ed868e58db6a1344968e64519068d369a3",
       "bytes": 19836,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/adapters/wechat/articles.rs",
-      "unchanged_from_previous_git_blob": true,
-      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/adapters/wechat/articles.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     },
     {
       "path": "src/adapters/wechat/contacts/mod.rs",
       "sha256": "967f19dd78589254d44d974c9fb730fbb83a12c142ff9cd7f947724e2a0221fe",
       "git_blob_sha256": "967f19dd78589254d44d974c9fb730fbb83a12c142ff9cd7f947724e2a0221fe",
       "bytes": 15542,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/adapters/wechat/contacts/mod.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/adapters/wechat/contacts/mod.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -86,7 +67,7 @@
       "sha256": "ef15d849510f8797c5fa7818e397d4f9bc47b0b3b2546dbfbf751a38e21b93a0",
       "git_blob_sha256": "ef15d849510f8797c5fa7818e397d4f9bc47b0b3b2546dbfbf751a38e21b93a0",
       "bytes": 2709,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/adapters/wechat/emoticons/remote_format.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/adapters/wechat/emoticons/remote_format.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -95,7 +76,7 @@
       "sha256": "ad54b8ad9db2adaf167a0fe9efa1b522d6f11e6ca489f6c4011f7ea3037698d1",
       "git_blob_sha256": "ad54b8ad9db2adaf167a0fe9efa1b522d6f11e6ca489f6c4011f7ea3037698d1",
       "bytes": 7714,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/adapters/wechat/media/SNS_KEYSTREAM.md",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/adapters/wechat/media/SNS_KEYSTREAM.md",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -104,7 +85,7 @@
       "sha256": "a20ba56ee0351a55a6275290812600314eadc261dcdcfa049004cdea0770a7a2",
       "git_blob_sha256": "a20ba56ee0351a55a6275290812600314eadc261dcdcfa049004cdea0770a7a2",
       "bytes": 1058,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/adapters/wechat/media/assets/README.md",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/adapters/wechat/media/assets/README.md",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -113,7 +94,7 @@
       "sha256": "ea8b44d9cd30da19eb1c94cb3c1c255cac26821d331298a8238c7eeaaac6e3c0",
       "git_blob_sha256": "ea8b44d9cd30da19eb1c94cb3c1c255cac26821d331298a8238c7eeaaac6e3c0",
       "bytes": 3802,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/adapters/wechat/media/directory_layout.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/adapters/wechat/media/directory_layout.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -122,7 +103,7 @@
       "sha256": "cc57b62edb2b84817af5f215eae2fde9622361695ffa21d697416525f7089403",
       "git_blob_sha256": "cc57b62edb2b84817af5f215eae2fde9622361695ffa21d697416525f7089403",
       "bytes": 5707,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/adapters/wechat/media/legacy_dat.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/adapters/wechat/media/legacy_dat.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -131,7 +112,7 @@
       "sha256": "093d82e47a62f03bed73f9de4d5aedb99833e7afabd631f5ea04c6d422df54ed",
       "git_blob_sha256": "093d82e47a62f03bed73f9de4d5aedb99833e7afabd631f5ea04c6d422df54ed",
       "bytes": 8518,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/adapters/wechat/media/resource.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/adapters/wechat/media/resource.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -140,7 +121,7 @@
       "sha256": "ac108b62daa3c4025f9288b607f1f15512d919cae79ef134c9e4572c580db337",
       "git_blob_sha256": "ac108b62daa3c4025f9288b607f1f15512d919cae79ef134c9e4572c580db337",
       "bytes": 15080,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/adapters/wechat/media/sns_keystream.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/adapters/wechat/media/sns_keystream.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -149,7 +130,7 @@
       "sha256": "84ef9f5a3dd5a6f49ea80b66f4d24a5f702d1f4f063fe2e373a1ebf955ce8224",
       "git_blob_sha256": "84ef9f5a3dd5a6f49ea80b66f4d24a5f702d1f4f063fe2e373a1ebf955ce8224",
       "bytes": 7378,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/adapters/wechat/media/strict_image.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/adapters/wechat/media/strict_image.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -158,16 +139,16 @@
       "sha256": "9fee9c38e43b8e5474d47159ee913ab396043fcd4bd376a61bd8773468d1036b",
       "git_blob_sha256": "9fee9c38e43b8e5474d47159ee913ab396043fcd4bd376a61bd8773468d1036b",
       "bytes": 39376,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/adapters/wechat/media/voice.rs",
-      "unchanged_from_previous_git_blob": true,
-      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/adapters/wechat/media/voice.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     },
     {
       "path": "src/adapters/wechat/media/voice_export.rs",
       "sha256": "fff6fa637e88ec7bb052da2fad4f0ae147e411d8e882578305fb7add4b3cf380",
       "git_blob_sha256": "fff6fa637e88ec7bb052da2fad4f0ae147e411d8e882578305fb7add4b3cf380",
       "bytes": 16735,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/adapters/wechat/media/voice_export.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/adapters/wechat/media/voice_export.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -176,7 +157,7 @@
       "sha256": "94c12b0aa7d8e949d601217488b94c5bfb6fd3b69314c1cc235347c905da9a28",
       "git_blob_sha256": "94c12b0aa7d8e949d601217488b94c5bfb6fd3b69314c1cc235347c905da9a28",
       "bytes": 23370,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/adapters/wechat/messages/export_content.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/adapters/wechat/messages/export_content.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -185,7 +166,7 @@
       "sha256": "cd2c7a2dcafaf0e1a9677d4c255d8d74451cd3b2c374c99116e9cedc54b92070",
       "git_blob_sha256": "cd2c7a2dcafaf0e1a9677d4c255d8d74451cd3b2c374c99116e9cedc54b92070",
       "bytes": 31383,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/adapters/wechat/messages/read/mod.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/adapters/wechat/messages/read/mod.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -194,7 +175,7 @@
       "sha256": "75f0b608e4c802e6a7b77dbcba41efc6b47b7a58faa93686090f492c1d8b539f",
       "git_blob_sha256": "75f0b608e4c802e6a7b77dbcba41efc6b47b7a58faa93686090f492c1d8b539f",
       "bytes": 5761,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/adapters/wechat/messages/sessions.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/adapters/wechat/messages/sessions.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -203,7 +184,7 @@
       "sha256": "86ffb3a0b46cfa134680eafa89f1a3a7be49e9ba1cc2193abae282918b984648",
       "git_blob_sha256": "86ffb3a0b46cfa134680eafa89f1a3a7be49e9ba1cc2193abae282918b984648",
       "bytes": 5251,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/adapters/wechat/messages/summary.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/adapters/wechat/messages/summary.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -212,7 +193,7 @@
       "sha256": "567ecffd76c1554a0d7c9c26210dae5fa9c62b5d902e98f4a7be670207ce5ac4",
       "git_blob_sha256": "567ecffd76c1554a0d7c9c26210dae5fa9c62b5d902e98f4a7be670207ce5ac4",
       "bytes": 32441,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/adapters/wechat/moments.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/adapters/wechat/moments.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -221,7 +202,7 @@
       "sha256": "93fec464517b5a9167fcf879e1548f03d9cbe4dbe1851f925c52ba525de40686",
       "git_blob_sha256": "93fec464517b5a9167fcf879e1548f03d9cbe4dbe1851f925c52ba525de40686",
       "bytes": 30888,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/adapters/wechat/moments/cache.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/adapters/wechat/moments/cache.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -230,7 +211,7 @@
       "sha256": "5f12a2e4270f3fe293e2e0e658c6768a7b3618119ce091987652cb11903ae47b",
       "git_blob_sha256": "5f12a2e4270f3fe293e2e0e658c6768a7b3618119ce091987652cb11903ae47b",
       "bytes": 7911,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/adapters/wechat/moments/decode.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/adapters/wechat/moments/decode.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -239,7 +220,7 @@
       "sha256": "5342f3da569139c5fe91b03a2dbace73f586bb951c9cdb9e3f2487f5e81ae2ed",
       "git_blob_sha256": "5342f3da569139c5fe91b03a2dbace73f586bb951c9cdb9e3f2487f5e81ae2ed",
       "bytes": 7417,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/adapters/wechat/moments/legacy.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/adapters/wechat/moments/legacy.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -248,7 +229,7 @@
       "sha256": "3e52b0b14705ced6ebbb51e3b460f908991f796907b89cd0ae7681141416c501",
       "git_blob_sha256": "3e52b0b14705ced6ebbb51e3b460f908991f796907b89cd0ae7681141416c501",
       "bytes": 8997,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/adapters/wechat/moments/query_xml.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/adapters/wechat/moments/query_xml.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -257,16 +238,16 @@
       "sha256": "6d41b08b40cac5137268529d8e8ab6e026e9b77e0ef7a76d2ad491279844ed5c",
       "git_blob_sha256": "6d41b08b40cac5137268529d8e8ab6e026e9b77e0ef7a76d2ad491279844ed5c",
       "bytes": 12038,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/adapters/wechat/planning/scan.rs",
-      "unchanged_from_previous_git_blob": true,
-      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/adapters/wechat/planning/scan.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     },
     {
       "path": "src/application/database_decryption.rs",
       "sha256": "d6d3da95f5c3792841d495413951abf6ef25e3da8f4115b2aa19d7810a5e043a",
       "git_blob_sha256": "d6d3da95f5c3792841d495413951abf6ef25e3da8f4115b2aa19d7810a5e043a",
       "bytes": 6323,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/application/database_decryption.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/application/database_decryption.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -275,7 +256,7 @@
       "sha256": "48cdc839857a66cfe786fb5238ff218732e58251169e3f71ef55c44a21d8bc57",
       "git_blob_sha256": "48cdc839857a66cfe786fb5238ff218732e58251169e3f71ef55c44a21d8bc57",
       "bytes": 10228,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/application/emoticons/download.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/application/emoticons/download.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -284,16 +265,16 @@
       "sha256": "44a9f7b7984666715d8e99b6ed822e6c53b7fb1fa71656a08271c0342ca67fc6",
       "git_blob_sha256": "44a9f7b7984666715d8e99b6ed822e6c53b7fb1fa71656a08271c0342ca67fc6",
       "bytes": 39462,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/application/image_publication.rs",
-      "unchanged_from_previous_git_blob": true,
-      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/application/image_publication.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     },
     {
       "path": "src/application/mod.rs",
       "sha256": "de9b361342a539c1241d7fccef910d39e02774e91eba3dc1d4ffaaf78af4b493",
       "git_blob_sha256": "de9b361342a539c1241d7fccef910d39e02774e91eba3dc1d4ffaaf78af4b493",
       "bytes": 497,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/application/mod.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/application/mod.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -302,7 +283,7 @@
       "sha256": "d29864bc0e50f355a026099b247603fc40cc8062feb6e8df8fc3c3ff80a110c4",
       "git_blob_sha256": "d29864bc0e50f355a026099b247603fc40cc8062feb6e8df8fc3c3ff80a110c4",
       "bytes": 12955,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/application/moments/album_images.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/application/moments/album_images.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -311,7 +292,7 @@
       "sha256": "0f28cc8a0e873219f1a48d543d734260732ac72d73a9d35139141bed40347851",
       "git_blob_sha256": "0f28cc8a0e873219f1a48d543d734260732ac72d73a9d35139141bed40347851",
       "bytes": 6842,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/application/moments/cache.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/application/moments/cache.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -320,7 +301,7 @@
       "sha256": "04ab79a10d429be1695575a0985259f9cba9b21cc1ddfd0ad1bad95bb48d46af",
       "git_blob_sha256": "04ab79a10d429be1695575a0985259f9cba9b21cc1ddfd0ad1bad95bb48d46af",
       "bytes": 33089,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/application/moments/export.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/application/moments/export.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -329,7 +310,7 @@
       "sha256": "1a51137a23a656a9851a51376a286a764c171648615382663e7b8ddaa9e48acb",
       "git_blob_sha256": "1a51137a23a656a9851a51376a286a764c171648615382663e7b8ddaa9e48acb",
       "bytes": 7049,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/attachment/decoder/mod.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/attachment/decoder/mod.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -338,7 +319,7 @@
       "sha256": "eea55ac084eb7b5db756bdc701261649294462bc7295c856abbfc951a34085b4",
       "git_blob_sha256": "eea55ac084eb7b5db756bdc701261649294462bc7295c856abbfc951a34085b4",
       "bytes": 6023,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/attachment/decoder/v1_xor.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/attachment/decoder/v1_xor.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -347,7 +328,7 @@
       "sha256": "a1aee2544e10c25dafe308fc7eb48c44816ee69277bddb9b246c1f90c6f64bdb",
       "git_blob_sha256": "a1aee2544e10c25dafe308fc7eb48c44816ee69277bddb9b246c1f90c6f64bdb",
       "bytes": 5576,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/attachment/decoder/v2.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/attachment/decoder/v2.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -356,34 +337,25 @@
       "sha256": "6855ad129f1bb09cadc2feb4a141bb0f350ea58dccc149204e828ec3ef7dad68",
       "git_blob_sha256": "6855ad129f1bb09cadc2feb4a141bb0f350ea58dccc149204e828ec3ef7dad68",
       "bytes": 27516,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/attachment/local_files.rs",
-      "unchanged_from_previous_git_blob": true,
-      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/attachment/local_files.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     },
     {
       "path": "src/attachment/native_image.rs",
       "sha256": "e496dd8896115f4b380cca5f8eb4302869e398e836ee638dac1a9c688dc4f97c",
       "git_blob_sha256": "e496dd8896115f4b380cca5f8eb4302869e398e836ee638dac1a9c688dc4f97c",
       "bytes": 9753,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/attachment/native_image.rs",
-      "unchanged_from_previous_git_blob": true,
-      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/attachment/native_image.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     },
     {
       "path": "src/business/VOICE_EXPORT.md",
       "sha256": "e23c5be6c1d7dbfee3d6457ad8f1c6619b72dd2a8e7b35cea74c26d55491c961",
       "git_blob_sha256": "e23c5be6c1d7dbfee3d6457ad8f1c6619b72dd2a8e7b35cea74c26d55491c961",
       "bytes": 10784,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/business/VOICE_EXPORT.md",
-      "unchanged_from_previous_git_blob": true,
-      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
-    },
-    {
-      "path": "src/business/contacts.rs",
-      "sha256": "7c223c57092d5dbc75b86bc1f1c69217961419be1f953f391b879ac42e846705",
-      "git_blob_sha256": "7c223c57092d5dbc75b86bc1f1c69217961419be1f953f391b879ac42e846705",
-      "bytes": 13082,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/business/contacts.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/business/VOICE_EXPORT.md",
       "unchanged_from_previous_git_blob": false,
       "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     },
@@ -392,7 +364,7 @@
       "sha256": "8b8240d7de51b37514b11b17637f4c5e7fcc90dceee20ff80a402aa825454afd",
       "git_blob_sha256": "8b8240d7de51b37514b11b17637f4c5e7fcc90dceee20ff80a402aa825454afd",
       "bytes": 5792,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/business/voice_export.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/business/voice_export.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -401,7 +373,7 @@
       "sha256": "7ef592294576259d3a1029cc540cf5cdee5d415892201ef64783846ccb2951a2",
       "git_blob_sha256": "7ef592294576259d3a1029cc540cf5cdee5d415892201ef64783846ccb2951a2",
       "bytes": 1183,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/cli/chats.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/cli/chats.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -410,7 +382,7 @@
       "sha256": "9df4cc7102f42899a21ef0dc5d22350d677ca74fa7c43d4b008eb657d35232c2",
       "git_blob_sha256": "9df4cc7102f42899a21ef0dc5d22350d677ca74fa7c43d4b008eb657d35232c2",
       "bytes": 39597,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/cli/mcp_tasks.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/cli/mcp_tasks.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -419,7 +391,7 @@
       "sha256": "21306b5ea6ad17626d8416167b3092e5e38d98e1a1b6ba5527a7c3908eee9a51",
       "git_blob_sha256": "21306b5ea6ad17626d8416167b3092e5e38d98e1a1b6ba5527a7c3908eee9a51",
       "bytes": 28066,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/cli/mod.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/cli/mod.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -428,7 +400,7 @@
       "sha256": "77bba228826534e9cbf203d8874af4ea346ef0068f86dade7f6617b9c0c7d561",
       "git_blob_sha256": "77bba228826534e9cbf203d8874af4ea346ef0068f86dade7f6617b9c0c7d561",
       "bytes": 598,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/cli/voices.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/cli/voices.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -437,7 +409,7 @@
       "sha256": "48a754c602493fffa363900bcf43ee5fe0363f9ffdfb15125c05e5cc4b19bffd",
       "git_blob_sha256": "48a754c602493fffa363900bcf43ee5fe0363f9ffdfb15125c05e5cc4b19bffd",
       "bytes": 5485,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/cli/web_native.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/cli/web_native.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -446,16 +418,16 @@
       "sha256": "b298825746db7bed79559042824a5fbba3316164e016462a5b5088455ec91185",
       "git_blob_sha256": "b298825746db7bed79559042824a5fbba3316164e016462a5b5088455ec91185",
       "bytes": 18403,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/config.rs",
-      "unchanged_from_previous_git_blob": true,
-      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/config.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     },
     {
       "path": "src/crypto/auth.rs",
       "sha256": "db7add6dcbc5454f54eb5843f649025f29c5db6907a941996b278e817549b7c1",
       "git_blob_sha256": "db7add6dcbc5454f54eb5843f649025f29c5db6907a941996b278e817549b7c1",
       "bytes": 1499,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/crypto/auth.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/crypto/auth.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -464,7 +436,7 @@
       "sha256": "806753df0c8361787a554eb86f0e4441a0a1a3bcd5c177c6f1bc3b0a38a83fcd",
       "git_blob_sha256": "806753df0c8361787a554eb86f0e4441a0a1a3bcd5c177c6f1bc3b0a38a83fcd",
       "bytes": 8579,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/crypto/mod.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/crypto/mod.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -473,7 +445,7 @@
       "sha256": "e0d82edcff5dae9777f39535c618551ae24fc43e5c61c318dfe7c671b72aed93",
       "git_blob_sha256": "e0d82edcff5dae9777f39535c618551ae24fc43e5c61c318dfe7c671b72aed93",
       "bytes": 5151,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/crypto/wal.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/crypto/wal.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -482,16 +454,16 @@
       "sha256": "de08605c12f4ece3dde6b792f9ea2175067a699ab55228ade15f825139b991f5",
       "git_blob_sha256": "de08605c12f4ece3dde6b792f9ea2175067a699ab55228ade15f825139b991f5",
       "bytes": 3818,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/daemon/cache/snapshot.rs",
-      "unchanged_from_previous_git_blob": true,
-      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/daemon/cache/snapshot.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     },
     {
       "path": "src/daemon/operation_worker.rs",
       "sha256": "30204e997e698cc7c8c58abf888b26465df705202d4d10c7010f003b9bc4dadc",
       "git_blob_sha256": "30204e997e698cc7c8c58abf888b26465df705202d4d10c7010f003b9bc4dadc",
       "bytes": 3630,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/daemon/operation_worker.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/daemon/operation_worker.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -500,7 +472,7 @@
       "sha256": "4a6b5615591b019fc2ed90daf8bfad81a23b575c506ce1277455edfce702f2f3",
       "git_blob_sha256": "4a6b5615591b019fc2ed90daf8bfad81a23b575c506ce1277455edfce702f2f3",
       "bytes": 4462,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/daemon/operations/export_sns/source.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/daemon/operations/export_sns/source.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -509,7 +481,7 @@
       "sha256": "d6512371678a75d404864d16109153eaa69c118528cd912104b8beba87bd96c6",
       "git_blob_sha256": "d6512371678a75d404864d16109153eaa69c118528cd912104b8beba87bd96c6",
       "bytes": 1868,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/daemon/operations/image_import.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/daemon/operations/image_import.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -518,7 +490,7 @@
       "sha256": "0e82d7c129dcc19484938344d46e2560d9ed91a122b58ec028135d7c6f97a9a0",
       "git_blob_sha256": "0e82d7c129dcc19484938344d46e2560d9ed91a122b58ec028135d7c6f97a9a0",
       "bytes": 8835,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/daemon/operations/init.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/daemon/operations/init.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -527,16 +499,16 @@
       "sha256": "9db507ba80a1dd119c12dae1b441b5c2ff8850b9f474d6afd05d2591520413c0",
       "git_blob_sha256": "9db507ba80a1dd119c12dae1b441b5c2ff8850b9f474d6afd05d2591520413c0",
       "bytes": 26266,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/daemon/operations/media_snapshot.rs",
-      "unchanged_from_previous_git_blob": true,
-      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/daemon/operations/media_snapshot.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     },
     {
       "path": "src/daemon/operations/plan_tasks.rs",
       "sha256": "0468901f1536d95a5f2dd82d3b43ad619d0cdeab4e5396b2ed47fd21c9ed78e0",
       "git_blob_sha256": "0468901f1536d95a5f2dd82d3b43ad619d0cdeab4e5396b2ed47fd21c9ed78e0",
       "bytes": 7669,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/daemon/operations/plan_tasks.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/daemon/operations/plan_tasks.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -545,25 +517,16 @@
       "sha256": "3e7ee1fda0ba85e3ca27b1ac399dd542a7ef4951327a14b89d4d36c51a68c771",
       "git_blob_sha256": "3e7ee1fda0ba85e3ca27b1ac399dd542a7ef4951327a14b89d4d36c51a68c771",
       "bytes": 38525,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/daemon/operations/voices.rs",
-      "unchanged_from_previous_git_blob": true,
-      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/daemon/operations/voices.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     },
     {
       "path": "src/daemon/query/contact_rows.rs",
       "sha256": "c64e36fc20ca9e52f3a88c060f676d1863158edeea1818c5dfff1616a731eb9a",
       "git_blob_sha256": "c64e36fc20ca9e52f3a88c060f676d1863158edeea1818c5dfff1616a731eb9a",
       "bytes": 1091,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/daemon/query/contact_rows.rs",
-      "unchanged_from_previous_git_blob": true,
-      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
-    },
-    {
-      "path": "src/daemon/query/mcp_contacts.rs",
-      "sha256": "b8c7abfb562764aae8fdb4e2e3c395b3ed9edddcc40aa192f69afd0bbe07ff32",
-      "git_blob_sha256": "b8c7abfb562764aae8fdb4e2e3c395b3ed9edddcc40aa192f69afd0bbe07ff32",
-      "bytes": 3780,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/daemon/query/mcp_contacts.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/daemon/query/contact_rows.rs",
       "unchanged_from_previous_git_blob": false,
       "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     },
@@ -572,16 +535,16 @@
       "sha256": "b8e36a798c9e644a9e853deaa2e90cbbbc59f24a5b5ad49186e5309993ee62e2",
       "git_blob_sha256": "b8e36a798c9e644a9e853deaa2e90cbbbc59f24a5b5ad49186e5309993ee62e2",
       "bytes": 4736,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/daemon/query/web_contacts.rs",
-      "unchanged_from_previous_git_blob": true,
-      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/daemon/query/web_contacts.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     },
     {
       "path": "src/daemon/tasks/artifact_file.rs",
       "sha256": "e6dc977a2d8c7d4b4d58ae8156b922e33c546128bed69c0673aa8d07863ed2e3",
       "git_blob_sha256": "e6dc977a2d8c7d4b4d58ae8156b922e33c546128bed69c0673aa8d07863ed2e3",
       "bytes": 10455,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/daemon/tasks/artifact_file.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/daemon/tasks/artifact_file.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -590,7 +553,7 @@
       "sha256": "8f6d799b4d5f22a54a73f6a5f55b292e016fcc47c12608f657272af7da4338ab",
       "git_blob_sha256": "8f6d799b4d5f22a54a73f6a5f55b292e016fcc47c12608f657272af7da4338ab",
       "bytes": 27813,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/daemon/tasks/artifacts.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/daemon/tasks/artifacts.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -599,7 +562,7 @@
       "sha256": "ba7b855dbed0be82b706f6b534c112e61864b7692a2477c525c4439586124863",
       "git_blob_sha256": "ba7b855dbed0be82b706f6b534c112e61864b7692a2477c525c4439586124863",
       "bytes": 23561,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/daemon/tasks/plan_artifacts.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/daemon/tasks/plan_artifacts.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -608,7 +571,7 @@
       "sha256": "525a12d2635152d66a735418dc293f891ff46896dc7c6c3e2b961a80b6ea3dde",
       "git_blob_sha256": "525a12d2635152d66a735418dc293f891ff46896dc7c6c3e2b961a80b6ea3dde",
       "bytes": 10023,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/daemon/tasks/process.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/daemon/tasks/process.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -617,7 +580,7 @@
       "sha256": "9ee761bb299c9dc8edc85c71ea5dfa945cbd2475d02cbd49ed60f051e5703b7d",
       "git_blob_sha256": "9ee761bb299c9dc8edc85c71ea5dfa945cbd2475d02cbd49ed60f051e5703b7d",
       "bytes": 17914,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/daemon/tasks/voice_artifacts.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/daemon/tasks/voice_artifacts.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -626,7 +589,7 @@
       "sha256": "012f8c86834c141df9f17bd94df581832cecdf23b6da8bd1534fdd61ff03a3d4",
       "git_blob_sha256": "012f8c86834c141df9f17bd94df581832cecdf23b6da8bd1534fdd61ff03a3d4",
       "bytes": 23127,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/daemon/worker_keys.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/daemon/worker_keys.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -635,7 +598,7 @@
       "sha256": "f56607d61b69c80852ec02f0efb520d6ba575f3ce22a25dec778f44904250f2d",
       "git_blob_sha256": "f56607d61b69c80852ec02f0efb520d6ba575f3ce22a25dec778f44904250f2d",
       "bytes": 179,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/infrastructure/mod.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/infrastructure/mod.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -644,7 +607,7 @@
       "sha256": "ba26e4f309253f0a5e6490747c91fa6c337fded17a501935af154d2e907663ae",
       "git_blob_sha256": "ba26e4f309253f0a5e6490747c91fa6c337fded17a501935af154d2e907663ae",
       "bytes": 19644,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/infrastructure/output_tree/mod.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/infrastructure/output_tree/mod.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -653,34 +616,16 @@
       "sha256": "b8960bfb910afbde34ec9d5a7d15f0c5a8207e655367068774e88b958c23d92f",
       "git_blob_sha256": "b8960bfb910afbde34ec9d5a7d15f0c5a8207e655367068774e88b958c23d92f",
       "bytes": 23156,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/mcp/PROTOCOL.md",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/mcp/PROTOCOL.md",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
-    },
-    {
-      "path": "src/mcp/protocol.rs",
-      "sha256": "d4e62e8cbd759f30ae87962a191e48ffae1fb611c1bdb9ab5ed9fc2c85400480",
-      "git_blob_sha256": "d4e62e8cbd759f30ae87962a191e48ffae1fb611c1bdb9ab5ed9fc2c85400480",
-      "bytes": 43345,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/mcp/protocol.rs",
-      "unchanged_from_previous_git_blob": false,
-      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
-    },
-    {
-      "path": "src/mcp/protocol_tests.rs",
-      "sha256": "6717f9124eac60468ec4fee3fe975b925d98e63109e8a7ad881dfbfcb80888c8",
-      "git_blob_sha256": "6717f9124eac60468ec4fee3fe975b925d98e63109e8a7ad881dfbfcb80888c8",
-      "bytes": 38197,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/mcp/protocol_tests.rs",
-      "unchanged_from_previous_git_blob": false,
-      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     },
     {
       "path": "src/scanner/mod.rs",
       "sha256": "2fbfe12f59198c649eb1239871c0151e791a476852a4d2f55efbd03b4a618d14",
       "git_blob_sha256": "2fbfe12f59198c649eb1239871c0151e791a476852a4d2f55efbd03b4a618d14",
       "bytes": 11651,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/scanner/mod.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/scanner/mod.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -689,7 +634,7 @@
       "sha256": "082f64da4e9730c5ad43e3b2ec7bd3dc2d3445afe07268771962c8116f4f8133",
       "git_blob_sha256": "082f64da4e9730c5ad43e3b2ec7bd3dc2d3445afe07268771962c8116f4f8133",
       "bytes": 14673,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/scanner/windows/account.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/scanner/windows/account.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -698,7 +643,7 @@
       "sha256": "63dfd0be870e38ab2822622e835ece1ae832509b21e91ceb5ba25643ec4a2830",
       "git_blob_sha256": "63dfd0be870e38ab2822622e835ece1ae832509b21e91ceb5ba25643ec4a2830",
       "bytes": 8827,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/service/chat_plan.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/service/chat_plan.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -707,25 +652,25 @@
       "sha256": "1a69c565239f24ce5ca70f00d863ea4277a06f0bd3f4ecc8dc9366d3e669c767",
       "git_blob_sha256": "1a69c565239f24ce5ca70f00d863ea4277a06f0bd3f4ecc8dc9366d3e669c767",
       "bytes": 15558,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/service/client.rs",
-      "unchanged_from_previous_git_blob": true,
-      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/service/client.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     },
     {
       "path": "src/service/config_pin.rs",
       "sha256": "6a39324386be5b6e8bdd617e385bfe08c1df110cd86b107b7499f8b4863dea91",
       "git_blob_sha256": "6a39324386be5b6e8bdd617e385bfe08c1df110cd86b107b7499f8b4863dea91",
       "bytes": 9108,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/service/config_pin.rs",
-      "unchanged_from_previous_git_blob": true,
-      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/service/config_pin.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     },
     {
       "path": "src/service/image_import.rs",
       "sha256": "76efc14cf4e4e4a0cc2f63a72e350e12ce23a13098867e8fb84af23ffac6c8b8",
       "git_blob_sha256": "76efc14cf4e4e4a0cc2f63a72e350e12ce23a13098867e8fb84af23ffac6c8b8",
       "bytes": 13075,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/service/image_import.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/service/image_import.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -734,7 +679,7 @@
       "sha256": "8f376755a05286b3fd8a442593e43605f0d9b5753ae25dd7043f0abd24edca0e",
       "git_blob_sha256": "8f376755a05286b3fd8a442593e43605f0d9b5753ae25dd7043f0abd24edca0e",
       "bytes": 106,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/service/operation_requests/key_provider.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/service/operation_requests/key_provider.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -743,7 +688,7 @@
       "sha256": "ac0589b9a0baa5327e00ef547391b093a0a5faab0646792b0578a9a2b2bb564b",
       "git_blob_sha256": "ac0589b9a0baa5327e00ef547391b093a0a5faab0646792b0578a9a2b2bb564b",
       "bytes": 190,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/service/operation_requests/plan.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/service/operation_requests/plan.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -752,7 +697,7 @@
       "sha256": "cb9299abd9c5cd24b0c4b1658580f32aca3c03f7c55aacd484bfd00d4381cf79",
       "git_blob_sha256": "cb9299abd9c5cd24b0c4b1658580f32aca3c03f7c55aacd484bfd00d4381cf79",
       "bytes": 17678,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/service/plan.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/service/plan.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -761,25 +706,25 @@
       "sha256": "d1d2d43f74512335ae34a3fe76fe5aae82c109c2f815b57cf7c37c06b6386727",
       "git_blob_sha256": "d1d2d43f74512335ae34a3fe76fe5aae82c109c2f815b57cf7c37c06b6386727",
       "bytes": 33106,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/service/query_client.rs",
-      "unchanged_from_previous_git_blob": true,
-      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/service/query_client.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     },
     {
       "path": "src/service/settings.rs",
       "sha256": "6c7c7fd46e2c90eca8a6c25896a3c462e33d409ef6b69712f5e48b161b94dd2e",
       "git_blob_sha256": "6c7c7fd46e2c90eca8a6c25896a3c462e33d409ef6b69712f5e48b161b94dd2e",
       "bytes": 6219,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/service/settings.rs",
-      "unchanged_from_previous_git_blob": true,
-      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/service/settings.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     },
     {
       "path": "src/service/task_artifacts.rs",
       "sha256": "7a86da5ae6e3f44cccaf1e1f2a1a1122b19017d6c8245124062e4ce075adf965",
       "git_blob_sha256": "7a86da5ae6e3f44cccaf1e1f2a1a1122b19017d6c8245124062e4ce075adf965",
       "bytes": 8047,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/service/task_artifacts.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/service/task_artifacts.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -788,16 +733,16 @@
       "sha256": "01eabaa938ac5303dc0602bd6e5f3a511dcf9909f7dd97aefe9763a42e7ec255",
       "git_blob_sha256": "01eabaa938ac5303dc0602bd6e5f3a511dcf9909f7dd97aefe9763a42e7ec255",
       "bytes": 39446,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/service/transport.rs",
-      "unchanged_from_previous_git_blob": true,
-      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/service/transport.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     },
     {
       "path": "src/service/voice_export.rs",
       "sha256": "f52532f6396ff7a43f9f4f458287e0d5e76f21620c9f9ee99d01207ae6190ae8",
       "git_blob_sha256": "f52532f6396ff7a43f9f4f458287e0d5e76f21620c9f9ee99d01207ae6190ae8",
       "bytes": 7675,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/service/voice_export.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/service/voice_export.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -806,7 +751,7 @@
       "sha256": "03c00e4872131645328d5300d6562382db26a5999b7919c7ad0a40e2449e8ed4",
       "git_blob_sha256": "03c00e4872131645328d5300d6562382db26a5999b7919c7ad0a40e2449e8ed4",
       "bytes": 22153,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/service/web.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/service/web.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -815,7 +760,7 @@
       "sha256": "b4bd9c7e23fe5a65e2840d8f1b1126a6bf8c7d64ce28d174893817685e37fa3a",
       "git_blob_sha256": "b4bd9c7e23fe5a65e2840d8f1b1126a6bf8c7d64ce28d174893817685e37fa3a",
       "bytes": 46420,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/service/worker_keys.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/service/worker_keys.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -824,7 +769,7 @@
       "sha256": "75548629b18b8b8a3541f627e5ceea2d8c245c1a57ce9d232ca6c9608e736008",
       "git_blob_sha256": "75548629b18b8b8a3541f627e5ceea2d8c245c1a57ce9d232ca6c9608e736008",
       "bytes": 20221,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/web/artifacts.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/web/artifacts.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -833,25 +778,25 @@
       "sha256": "09b722ad8faa466570dc0c4a6923ec8b1da34785dbb28a16427eff0c9457edc2",
       "git_blob_sha256": "09b722ad8faa466570dc0c4a6923ec8b1da34785dbb28a16427eff0c9457edc2",
       "bytes": 143591,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/web/assets/app.js",
-      "unchanged_from_previous_git_blob": true,
-      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/web/assets/app.js",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     },
     {
       "path": "src/web/mod.rs",
       "sha256": "a9be8c81a7f483fac549078a3a9dc710172763412ce1bb0e8a78c34d6c6f2f3e",
       "git_blob_sha256": "a9be8c81a7f483fac549078a3a9dc710172763412ce1bb0e8a78c34d6c6f2f3e",
       "bytes": 61639,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/web/mod.rs",
-      "unchanged_from_previous_git_blob": true,
-      "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/web/mod.rs",
+      "unchanged_from_previous_git_blob": false,
+      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     },
     {
       "path": "src/web/voices.rs",
       "sha256": "bfb8a32a3afaab0ffa244e092a886b6f2d27bd4c914dca5b4bd4d55e6044e4a0",
       "git_blob_sha256": "bfb8a32a3afaab0ffa244e092a886b6f2d27bd4c914dca5b4bd4d55e6044e4a0",
       "bytes": 4749,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/web/voices.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/web/voices.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -860,7 +805,7 @@
       "sha256": "75bb50ff982fde600974aac3bcac379e40154f357155aa01103e89283d5da269",
       "git_blob_sha256": "75bb50ff982fde600974aac3bcac379e40154f357155aa01103e89283d5da269",
       "bytes": 3147,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/windows_process/README.md",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/windows_process/README.md",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -869,7 +814,7 @@
       "sha256": "7b44c279151ef91e47f61cf10a22580ca70661555e4ababbd99f14633ac7594c",
       "git_blob_sha256": "7b44c279151ef91e47f61cf10a22580ca70661555e4ababbd99f14633ac7594c",
       "bytes": 12790,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/windows_process/managed.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/windows_process/managed.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
     },
@@ -878,18 +823,9 @@
       "sha256": "55b67e479205a92e1d8637430e3820a3baf887ea30562669c8f8b336867c1216",
       "git_blob_sha256": "55b67e479205a92e1d8637430e3820a3baf887ea30562669c8f8b336867c1216",
       "bytes": 10415,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/src/windows_process/managed/native.rs",
+      "source_link": "https://github.com/leyan2174/wx-workbench/blob/b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e/src/windows_process/managed/native.rs",
       "unchanged_from_previous_git_blob": true,
       "review_method": "prior-relevant-reading-plus-unchanged-git-blob"
-    },
-    {
-      "path": "tests/fixtures/mcp-contacts/tests.rs",
-      "sha256": "8d010001d9b0b9a5a521b6b2d0d7b64984bdb14eb1707d888d5495ba9baf3e2c",
-      "git_blob_sha256": "8d010001d9b0b9a5a521b6b2d0d7b64984bdb14eb1707d888d5495ba9baf3e2c",
-      "bytes": 13238,
-      "source_link": "https://github.com/leyan2174/wx-workbench/blob/d99697a4194a5b2c27a6deace8a45c86e90e96fa/tests/fixtures/mcp-contacts/tests.rs",
-      "unchanged_from_previous_git_blob": false,
-      "review_method": "fixed-commit-blob-capture; chapter text defines relevant-symbol review scope"
     }
   ]
 }

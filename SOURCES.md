@@ -13,7 +13,7 @@
 | [Frida](https://github.com/frida/frida)及[frida-rust](https://github.com/frida/frida-rust) | 代码项目账号捕获运行依赖 | 包括wxWindows Library Licence；本仓不分发运行库 |
 | [hicccc77/WeFlow](https://github.com/hicccc77/WeFlow)与[LifeArchiveProject/WeChatDataAnalysis](https://github.com/LifeArchiveProject/WeChatDataAnalysis) | 代码仓记录的SNS WxIsaac64资产来源链 | 传入副本无明确许可证明；不分发WASM或相关镜像 |
 
-本次来源映射到代码提交`b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e`的THIRD_PARTY_NOTICES.md。wx-cli许可证是本任务直接读取本地历史得到的文本证据；wechat-decrypt审查情况来自该提交的来源报告，LOGO127归属来自历史声明。后两项不是本任务独立取得的上游授权文件。上游链接用于定位归属，不表示对远端历史、全部许可证或每行来源完成独立审计。
+本次来源映射到代码提交`d99697a4194a5b2c27a6deace8a45c86e90e96fa`的THIRD_PARTY_NOTICES.md。wx-cli许可证是本任务直接读取本地历史得到的文本证据；wechat-decrypt审查情况来自该提交的来源报告，LOGO127归属来自历史声明。后两项不是本任务独立取得的上游授权文件。上游链接用于定位归属，不表示对远端历史、全部许可证或每行来源完成独立审计。
 
 历史LOGO127声明的本地源文件SHA-256为`958684992a3c894eb4f2d42d924a9a248b9ad5ba02b9fb6df308f77b6543debc`，已在历史证据清单记录；哈希只能固定声明文本，不能证明声明真实或授权有效。公开上游衍生源码前仍须补齐授权证据或审查并妥善替换受影响实现；移除vendor、语言翻译、AI改写或Private审阅均不自动解决该门槛。
 
