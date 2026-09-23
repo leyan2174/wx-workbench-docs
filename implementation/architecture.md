@@ -1,6 +1,6 @@
 # 当前实现与执行边界
 
-证据：C；本页以固定代码提交 `468bcc50aadc4b2f1e4901c1038b19de8b8c2a87` 为依据。阅读范围为 CLI 注册、模块声明、worker 材料、初始化、计划与产物、Windows 进程创建的相关符号；哈希及边界见[版本证据](../evidence/versions.md)。源码可证实不等于本任务已运行生产测试，也不描述微信自身的内部架构。
+证据：C；本页以固定代码提交 `b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e` 为依据。阅读范围为 CLI 注册、模块声明、worker 材料、初始化、计划与产物、Windows 进程创建，以及私有快照、目录固定、读取预算和 Web 展示的相关符号；未变化部分复用前轮核对，哈希及边界见[版本证据](../evidence/versions.md)。源码可证实不等于本任务已运行生产测试，也不描述微信自身的内部架构。
 
 ## 入口与职责
 
@@ -58,6 +58,16 @@ flowchart TB
 
 原始语音任务与同步CLI共享选择和严格关联，任务将SILK/证据作为完整组登记到新任务根。产物登记与文件落盘是不同状态；只有验证通过的登记产物可读取，不能通过任意路径浏览磁盘。计划、读取授权、取消窗口和计数限制见[计划与产物](plans-and-artifacts.md)。这不是所有 CLI 导出能力已在 MCP/Web 对等开放的声明。
 
+## 私有数据库快照与有界读取
+
+聊天媒体及计划由 `daemon::operations::media_snapshot::prepare_snapshot` 准备私有解密数据库，再通过 `ResourceSnapshot` 逐库执行 SQLite Backup，把已提交数据（包括解密副本 WAL 中已提交的数据）复制到静态副本，仅对副本设置 `journal_mode=DELETE`。静态文件移到批次私有根下的单层路径，逻辑 source 不变；计划消费者继续检查路径位于根内且只有一个层级。原始语音 CLI 与任务统一使用 `prepare_voice_snapshot`，由 `VoiceSnapshot` 持有各静态副本，覆盖整个读取生命周期。
+
+这不是跨库原子快照。冷解密和 Backup 可能耗时；源清单或状态变化会拒绝处理，等待写入稳定后重试。不删除源 WAL/SHM/journal，也不修改源库日志模式；严格语音读取器仍拒绝侧车。不能据此保证微信持续写入时成功或任意版本兼容。
+
+运行目录及祖先由 `service::transport::DirectoryGuard` 使用属性与列目录权限固定，禁止共享删除而允许子文件创建。计划大小扫描先读属性，对目录取得列举句柄并复核身份；扫描不读取文件正文。目录固定不表示子内容被冻结，缺权限或身份变化明确失败。
+
+配置及 ConfigPin 的读取上限为4 MiB，进程身份记录为16 KiB；图片输入通过已固定句柄读取，DAT 上限64 MiB，预检大小并保留有界读取与前后复核。不同接口还有各自的输出/响应预算，不能把这些数值视为全局统一限额。
+
 ## 创建时 Job 归属
 
 受控进程使用 Windows 10+ 的 `PROC_THREAD_ATTRIBUTE_JOB_LIST`，在 `CreateProcessW` 时绑定 kill-on-close Job，并以挂起状态创建，再恢复执行。生产路径不回退为创建后再绑定；系统不支持或宿主 Job 不兼容时明确失败。
@@ -73,3 +83,9 @@ flowchart TB
 离线SNS仍接受显式数据库、联系人和缓存来源，但固定Runtime/ConfigPin、实际文件及已有/缺失SQLite侧车。有缓存时逐个验证真实V2候选与受保护图片材料；无缓存也在最终发布前核验来源及配置，且不读取图片材料。fresh在目录rename前复核，update逐文件persist前复核；已经提交的前缀不回滚，不构成跨文件或跨对象原子CAS。
 
 目录Pin使用 `FILE_READ_ATTRIBUTES | FILE_LIST_DIRECTORY`（access `0x81`）及读写共享（share `3`），禁止删除共享；祖先目录同样固定。允许子文件创建与原子替换，不表示目录内容被冻结。普通源文件保持只读共享（share `1`），另行核验文件身份。缺少列目录权限的路径明确拒绝，无attributes-only降级；专门no-list ACL场景尚未实测。
+
+## Web 展示与查询契约
+
+Web 联系人读取当前账号 `SqliteContacts` 的独立 `nickname`、`remark` 字段，界面优先显示昵称；CLI/MCP contacts 仍使用 Names 快照的 username/display 投影。账号栏显示从绑定账号联系人资料取得的昵称和微信号，资料不可用时明确显示未读取，不把运行实例哈希当昵称。这是已选账号的展示，不是自动确认当前登录微信或自动切换账号。
+
+Web 会话列表按最近消息时间降序排列；这不改变消息历史分页顺序。HTTP `/api/favorites` 与 MCP `get_favorites` 提供收藏查询；`link`/`file` 类型筛选都对应宽泛应用消息类型49，不能据此精确区分链接和文件。

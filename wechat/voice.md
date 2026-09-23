@@ -1,6 +1,6 @@
 # 语音关联、原始SILK与外部解码
 
-当前证据：C；来源为固定提交 `468bcc50aadc4b2f1e4901c1038b19de8b8c2a87` 的 `src/adapters/wechat/media/voice.rs`、`src/adapters/wechat/media/voice_export.rs`、`src/daemon/operations/voices.rs` 及 `src/business/VOICE_EXPORT.md`。本章的消息关联与原始导出说明属于当前实现；后文封包规范化和 PCM 示例是历史代码参考与独立合成检查，不属于当前产品能力。
+当前证据：C；来源为固定提交 `b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e` 的 `src/adapters/wechat/media/voice.rs`、`src/adapters/wechat/media/voice_export.rs`、`src/daemon/operations/voices.rs` 及 `src/business/VOICE_EXPORT.md`。本章的消息关联与原始导出说明属于当前实现；后文封包规范化和 PCM 示例是历史代码参考与独立合成检查，不属于当前产品能力。
 
 **没有独立“语音密钥”的证据。** 数据库层解密后取得 SILK 字节；不能把音频解码器参数解释成加密密钥。
 
@@ -24,6 +24,8 @@
 原始导出的媒体目录选择与前述严格消息关联是两步：先按账号媒体清单选择，再尝试完整消息来源上的严格关联。选择接受历史媒体分片命名，按时间/local_id及稳定分片、rowid顺序分页；该兼容清单不等同只接受编号分片的严格关联库存。各分片独立只读事务，不承诺跨库原子快照。源码入口经 `service::worker_keys::database_keys` 取得材料，固定运行账号与 ConfigPin；音频、证据和汇总分别受保护发布，证据发布失败不会回滚已落盘音频。
 
 当前 `is_raw_silk` 只检查可选前缀后的 `#!SILK_V3` 头，不验证完整压缩包或可播放性。sender 与 duration_ms 是可选元数据，缺失不猜测；时长来自消息 XML，不能当作解码测量结果。
+
+项目宿主的 CLI 与任务都通过 `prepare_voice_snapshot` 创建私有解密来源，再由 SQLite Backup 生成静态副本，仅对副本设置 `journal_mode=DELETE`。严格关联仍拒绝 WAL/SHM/journal；每库备份不保证跨库原子一致性。该准备可能耗时，读取时源变化会拒绝，应等待写入稳定后重试，不删除源侧车。机制属于项目宿主，不能改写为微信本身的存储规范或全版本兼容保证。具体生命周期见[项目架构](../implementation/architecture.md#私有数据库快照与有界读取)。
 
 ## 同步CLI与原始语音任务
 

@@ -85,6 +85,21 @@ src/attachment/local_files.rs
 src/infrastructure/output_tree/mod.rs
 src/application/moments/cache.rs
 src/adapters/wechat/moments/cache.rs
+src/daemon/cache/snapshot.rs
+src/daemon/operations/media_snapshot.rs
+src/adapters/wechat/planning/scan.rs
+src/adapters/wechat/articles.rs
+src/service/config_pin.rs
+src/service/transport.rs
+src/service/query_client.rs
+src/service/client.rs
+src/service/settings.rs
+src/daemon/query/web_contacts.rs
+src/daemon/query/contact_rows.rs
+src/web/mod.rs
+src/web/assets/app.js
+src/attachment/native_image.rs
+README.md
 '''.splitlines()
 
 if __name__ == '__main__':
@@ -101,7 +116,7 @@ if __name__ == '__main__':
         text=True).strip()
     if len(publication) != 40 or any(c not in '0123456789abcdef' for c in publication):
         raise ValueError('expected full SHA-1 commit')
-    baseline = json.loads((output.parent / 'source-manifest-2026-09-17.json').read_text(encoding='utf-8'))
+    baseline = json.loads((output.parent / 'source-manifest-2026-09-18.json').read_text(encoding='utf-8'))
     previous = {row['path']: row['git_blob_sha256'] for row in baseline['files']}
     rows = []
     for name in sorted(FILES):
@@ -132,9 +147,9 @@ if __name__ == '__main__':
                 'source_links_verified_remotely': False,
                 'source_mode': 'git-objects-only; working tree and checkout HEAD excluded',
                 'commit_comparison': 'SHA-256 and byte counts are exact Git blob bytes; no newline normalization.',
-                'historical_manifests': ['source-manifest-2026-09-16.json', 'source-manifest-2026-09-17.json'],
+                'historical_manifests': ['source-manifest-2026-09-16.json', 'source-manifest-2026-09-17.json', 'source-manifest-2026-09-18.json'],
                 'previous_source_commit': baseline['publication_candidate_commit'],
-                'review_scope': 'Selected immutable blobs; relevant CLI, plan, artifact, process, raw-voice selection and group registration, Web/MCP authorization, and initialization symbols reviewed. Hash capture alone is not a full file audit or production test run.',
+                'review_scope': 'Bounded delta from 468bcc50: private SQLite snapshots, directory pins, read budgets, article XML fields and Web identity projections; unchanged relevant reading reused. Hash capture alone is not a full file audit or production test run.',
                 'files': rows}
     output.write_text(json.dumps(manifest, ensure_ascii=False, indent=2)+'\n', encoding='utf-8', newline='\n')
     print(json.dumps({'files': len(rows), 'status': manifest['status']}))

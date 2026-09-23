@@ -42,6 +42,12 @@
 
 历史元数据接口还可能在精确时间匹配失败后选同local_id/低位类型的最新行；严格媒体发布路径不采用这项回退。独立实现不要无声地混用两者。
 
+## 公众号文章解析
+
+项目 `src/adapters/wechat/articles.rs::parse_push` 对可解析的 XML 遍历 `item`，只从各项的直接子字段取文本；字段包含嵌套元素时不接受该字段。文本与 CDATA 由 XML 解析器读取，合并文本节点并去首尾空白；标题或 URL 缺失/为空的项不产生文章。`pub_time` 不能解析为整数时使用收到消息的时间，不能把这个回退值解释为已证实的文章发布时间。
+
+整个 XML 无法解析时保留 `InvalidContent` 问题标记，并尝试有限的 item 文本片段恢复；恢复到文章不表示输入完整有效。这是固定版本的适配器策略，不是公众号全部私有 schema；类型49也不限于文章。
+
 ## 通话记录
 
 通话类消息低位类型为50。当前摘要解析在含`<voip`的XML中读取`msg`文本并折叠空白。`Duration:`后保留时长文本；已识别状态包括`Canceled`、`Line busy`、`Already answered elsewhere`、`Declined on other device`、`Call canceled by caller`、`Call not answered`及`Call wasn't answered`；其他文本保留为Other。

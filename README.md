@@ -2,11 +2,11 @@
 
 独立保存 Windows 微信本地数据机制与可重建知识。已知目标为 **Windows 微信 4.1.13.65**；这是源码适配的目标范围，不代表所有章节均有该版本的独立实机验证。
 
-本仓库的主要内容无需打开项目源码即可阅读。可重建程度逐项见[覆盖矩阵](evidence/coverage.md)。项目实现仓库为 [wx-workbench](https://github.com/leyan2174/wx-workbench)。本文档已通过Private交付验收，尚未宣布公开验收完成。
+本仓库的主要内容无需打开项目源码即可阅读。可重建程度逐项见[覆盖矩阵](evidence/coverage.md)。项目实现仓库为 [wx-workbench](https://github.com/leyan2174/wx-workbench)。本次文档修订已通过维护方的Private内容验收，实际提交与远端状态以Git记录为准；这不是Public就绪声明。
 
-2026-09-18按固定源码提交修订入口、不可变计划、受控产物、创建时Job归属、原始语音任务及宿主图片材料/SNS发布边界，范围见[版本证据](evidence/versions.md)。当前候选目标仍为Private；文档合成检查不等于生产版本运行验收。
+本文档按固定源码说明入口、不可变计划、受控产物、私有数据库快照、原始语音及宿主材料边界，范围见[版本证据](evidence/versions.md)。当前交付目标仍为Private；文档检查不等于生产版本或全部真实微信功能验收。
 
-当前Private源码基线为`468bcc50aadc4b2f1e4901c1038b19de8b8c2a87`。上游授权证据仍有未决项，见[来源与许可](SOURCES.md)；不把本候选的Private交付条件解释为公开衍生源码已获准分发。
+当前Private源码基线为`b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e`。上游授权证据仍有未决项，见[来源与许可](SOURCES.md)；不把本候选的Private交付条件解释为公开衍生源码已获准分发。
 
 ## AI 作者声明
 

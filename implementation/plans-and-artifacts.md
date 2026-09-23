@@ -1,6 +1,6 @@
 # 不可变计划与受控产物
 
-证据：C；固定提交 `468bcc50aadc4b2f1e4901c1038b19de8b8c2a87`。依据 `src/service/chat_plan.rs`、`src/service/task_artifacts.rs`、`src/daemon/operations/plan_tasks.rs` 与 `src/daemon/tasks/` 的计划、登记及文件读取实现，并对照同版本 `docs/task-artifacts.md`。本章说明实现边界，不提供真实账号测试结论。
+证据：C；固定提交 `b7015ad2b7060a5dff6ddb9a9e2cc3a88403e86e`。依据 `src/service/chat_plan.rs`、`src/service/task_artifacts.rs`、`src/daemon/operations/plan_tasks.rs` 与 `src/daemon/tasks/` 的计划、登记及文件读取实现，并对照同版本 `docs/task-artifacts.md`。本章说明实现边界，不提供真实账号测试结论。
 
 ## 计划引用与选集
 
